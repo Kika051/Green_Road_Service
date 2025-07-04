@@ -5,6 +5,7 @@ import Booking from "./pages/Booking";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import Navbar from "./components/Navbar";
+import Register from "./pages/Register";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
