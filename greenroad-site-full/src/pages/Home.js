@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import background from "../Images/Background.png";
 
 const HeroText = () => (
@@ -15,12 +16,11 @@ const HeroText = () => (
 
 const HeroButtons = () => (
   <div className="flex gap-4 flex-wrap justify-center">
-    <button className="bg-primary px-6 py-2 rounded text-black font-semibold">
-      Réserver maintenant
-    </button>
-    <button className="border border-white px-6 py-2 rounded font-semibold text-white">
-      Demander un devis
-    </button>
+    <Link to="/booking">
+      <button className="bg-primary px-6 py-2 rounded text-black font-semibold">
+        Réserver maintenant
+      </button>
+    </Link>
   </div>
 );
 

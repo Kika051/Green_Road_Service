@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase/firebaseConfig";
+
+const backendUrl =
+  import.meta.env?.VITE_BACKEND_URL ||
+  "http://127.0.0.1:5001/green-road-servicesvtc/us-central1";
 
 export default function Booking() {
   const [pickup, setPickup] = useState("");
@@ -12,12 +19,14 @@ export default function Booking() {
   const [kilometers, setKilometers] = useState(null);
   const [loading, setLoading] = useState(false);
   const [stops, setStops] = useState([]);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const pickupRef = useRef(null);
   const dropoffRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (!window.google || !window.google.maps || !window.google.maps.places) {
+    if (!window.google || !window.google.maps?.places) {
       console.error("Google Maps API non chargée !");
       return;
     }
@@ -50,17 +59,18 @@ export default function Booking() {
     setLoading(true);
 
     try {
-      const response = await axios.post(
-        "http://127.0.0.1:5001/green-road-servicesvtc/us-central1/createQuote",
-        { pickup, dropoff, stops }
-      );
+      const response = await axios.post(`${backendUrl}/createQuote`, {
+        pickup,
+        dropoff,
+        stops,
+      });
 
       if (response.data.success && response.data.quote) {
         const { price, kilometers } = response.data.quote;
         setPrix(price);
         setKilometers(kilometers);
+        setShowConfirmation(true);
       } else {
-        console.error("Erreur backend :", response.data);
         alert("Impossible de calculer le prix.");
       }
     } catch (error) {
@@ -69,6 +79,39 @@ export default function Booking() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleReservation = () => {
+    onAuthStateChanged(auth, async (user) => {
+      if (!user) {
+        alert("Vous devez être connecté pour réserver.");
+        navigate("/login");
+        return;
+      }
+
+      try {
+        const response = await axios.post(`${backendUrl}/generateStripeLink`, {
+          email: user.email,
+          pickup,
+          dropoff,
+          datetime,
+          passengers: parseInt(passengers),
+          carSeat,
+          carSeatCount: parseInt(carSeatCount),
+          prix: parseFloat(prix),
+          kilometers: parseFloat(kilometers),
+        });
+
+        if (response.data.success && response.data.checkoutUrl) {
+          window.location.href = response.data.checkoutUrl;
+        } else {
+          alert("Une erreur est survenue.");
+        }
+      } catch (error) {
+        console.error("Erreur Stripe :", error.message);
+        alert("Erreur lors de la réservation.");
+      }
+    });
   };
 
   return (
@@ -152,6 +195,28 @@ export default function Booking() {
             <p>
               Distance estimée : <strong>{kilometers} km</strong>
             </p>
+          )}
+
+          {showConfirmation && (
+            <div className="mt-4">
+              <p className="mb-2 font-medium">
+                Souhaitez-vous réserver cette course ?
+              </p>
+              <div className="flex justify-center gap-4">
+                <button
+                  onClick={handleReservation}
+                  className="bg-green-600 text-white px-4 py-2 rounded"
+                >
+                  Oui
+                </button>
+                <button
+                  onClick={() => window.location.reload()}
+                  className="bg-gray-400 text-black px-4 py-2 rounded"
+                >
+                  Non
+                </button>
+              </div>
+            </div>
           )}
         </div>
       )}
