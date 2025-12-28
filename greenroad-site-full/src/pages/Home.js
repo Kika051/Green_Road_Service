@@ -5,7 +5,7 @@ import background from "../Images/Background.png";
 const HeroText = () => (
   <>
     <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-      Votre VTC premium à Reims et en Champagne
+      Votre chauffeur premium à Reims et en Champagne
     </h1>
     <p className="max-w-xl text-gray-300 mb-6">
       Aéroports, gares, mariages, événements – réservez votre chauffeur

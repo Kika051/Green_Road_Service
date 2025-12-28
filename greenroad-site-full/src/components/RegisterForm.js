@@ -1,7 +1,8 @@
 // src/components/RegisterForm.js
 import React, { useState } from "react";
-import { auth } from "../firebase/firebaseConfig";
+import { auth, db } from "../firebase/firebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
 
 export default function RegisterForm() {
   const [email, setEmail] = useState("");
@@ -15,12 +16,19 @@ export default function RegisterForm() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    if (!prenom || !nom || !telephone || !dateNaissance || !email) {
+    if (
+      !prenom ||
+      !nom ||
+      !telephone ||
+      !dateNaissance ||
+      !email ||
+      !password ||
+      !confirmPassword
+    ) {
       alert("❌ Tous les champs doivent être remplis.");
       return;
     }
 
-    // ✅ Vérification âge
     const birthDate = new Date(dateNaissance);
     const today = new Date();
     const age = today.getFullYear() - birthDate.getFullYear();
@@ -50,20 +58,41 @@ export default function RegisterForm() {
     }
 
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      alert("✅ Compte créé avec succès !");
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const uid = userCredential.user.uid;
+
+      // ✅ Ajout Firestore
+      try {
+        await setDoc(doc(db, "users", uid), {
+          firstName: prenom,
+          lastName: nom,
+          phone: telephone,
+          birthDate: dateNaissance,
+          email: email,
+          role: ["client"],
+          createdAt: new Date(),
+        });
+        alert("✅ Compte créé avec succès !");
+        window.location.href = "/login";
+      } catch (err) {
+        console.error("Erreur Firestore :", err);
+        alert("❌ Erreur lors de l'enregistrement dans la base de données.");
+      }
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert(
           "❌ Ce compte existe déjà. Redirection vers la page de connexion..."
         );
         window.location.href = "/login";
-        return;
+      } else {
+        alert("❌ Erreur Firebase : " + error.message);
       }
-
-      alert("❌ Erreur Firebase : " + error.message);
     }
-  }; // ✅ <-- ici c'était manquant
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black px-4">

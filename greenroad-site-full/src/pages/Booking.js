@@ -3,16 +3,18 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase/firebaseConfig";
+import { Phone } from "lucide-react";
 
+// URL réelle de tes Cloud Functions déployées
 const backendUrl =
-  import.meta.env?.VITE_BACKEND_URL ||
-  "http://127.0.0.1:5001/green-road-servicesvtc/us-central1";
+  "https://us-central1-green-road-servicesvtc.cloudfunctions.net/api";
 
 export default function Booking() {
   const [pickup, setPickup] = useState("");
   const [dropoff, setDropoff] = useState("");
   const [datetime, setDatetime] = useState("");
   const [passengers, setPassengers] = useState(1);
+  const [phone, setPhone] = useState(""); // ✅ Ajout du téléphone
   const [carSeat, setCarSeat] = useState("non");
   const [carSeatCount, setCarSeatCount] = useState(1);
   const [prix, setPrix] = useState(null);
@@ -25,11 +27,9 @@ export default function Booking() {
   const dropoffRef = useRef(null);
   const navigate = useNavigate();
 
+  // Autocomplete Google Maps
   useEffect(() => {
-    if (!window.google || !window.google.maps?.places) {
-      console.error("Google Maps API non chargée !");
-      return;
-    }
+    if (!window.google || !window.google.maps?.places) return;
 
     const pickupAutocomplete = new window.google.maps.places.Autocomplete(
       pickupRef.current,
@@ -50,9 +50,10 @@ export default function Booking() {
     });
   }, []);
 
+  // Calculer devis
   const handleCalculate = async () => {
     if (!pickup || !dropoff) {
-      alert("Merci d’indiquer un lieu de prise en charge et de destination.");
+      alert("Merci de remplir les adresses.");
       return;
     }
 
@@ -65,51 +66,86 @@ export default function Booking() {
         stops,
       });
 
-      if (response.data.success && response.data.quote) {
-        const { price, kilometers } = response.data.quote;
-        setPrix(price);
-        setKilometers(kilometers);
+      if (response.data.success) {
+        setPrix(response.data.quote.price);
+        setKilometers(response.data.quote.kilometers);
         setShowConfirmation(true);
       } else {
-        alert("Impossible de calculer le prix.");
+        alert("Erreur lors du calcul du prix.");
       }
     } catch (error) {
-      console.error("Erreur lors de la requête au backend :", error.message);
-      alert("Erreur de communication avec le serveur.");
-    } finally {
-      setLoading(false);
+      console.error(error);
+      alert("Erreur serveur.");
     }
+
+    setLoading(false);
   };
 
+  // Envoyer réservation
   const handleReservation = () => {
+    console.log("🚀 handleReservation appelé");
+
+    // Vérifier le téléphone
+    if (!phone.trim()) {
+      alert("Veuillez entrer votre numéro de téléphone.");
+      return;
+    }
+
     onAuthStateChanged(auth, async (user) => {
+      console.log("👤 User:", user);
+
       if (!user) {
-        alert("Vous devez être connecté pour réserver.");
+        console.log("❌ Pas d'utilisateur, redirection login");
         navigate("/login");
         return;
       }
 
-      try {
-        const response = await axios.post(`${backendUrl}/generateStripeLink`, {
-          email: user.email,
-          pickup,
-          dropoff,
-          datetime,
-          passengers: parseInt(passengers),
-          carSeat,
-          carSeatCount: parseInt(carSeatCount),
-          prix: parseFloat(prix),
-          kilometers: parseFloat(kilometers),
-        });
+      // ✅ Récupérer le nom du client (displayName pour Google, ou email)
+      const clientName = user.displayName || user.email;
 
-        if (response.data.success && response.data.checkoutUrl) {
-          window.location.href = response.data.checkoutUrl;
+      console.log("📦 Envoi de la requête avec:", {
+        email: user.email,
+        uid: user.uid,
+        clientName,
+        phone,
+        pickup,
+        dropoff,
+        datetime,
+        passengers,
+        prix,
+        kilometers,
+      });
+
+      try {
+        const response = await axios.post(
+          `${backendUrl}/createBookingRequest`,
+          {
+            email: user.email,
+            uid: user.uid,
+            clientName, // ✅ Nom du client
+            phone, // ✅ Téléphone
+            pickup,
+            dropoff,
+            datetime,
+            passengers: parseInt(passengers),
+            carSeat,
+            carSeatCount: carSeat === "oui" ? parseInt(carSeatCount) : 0,
+            prix: parseFloat(prix),
+            kilometers: parseFloat(kilometers),
+          }
+        );
+
+        console.log("✅ Réponse:", response.data);
+
+        if (response.data.success) {
+          alert("Votre demande a bien été envoyée.");
+          navigate("/account");
         } else {
-          alert("Une erreur est survenue.");
+          alert("Erreur lors de l'enregistrement.");
         }
       } catch (error) {
-        console.error("Erreur Stripe :", error.message);
-        alert("Erreur lors de la réservation.");
+        console.error("❌ Erreur:", error);
+        alert("Erreur serveur.");
       }
     });
   };
@@ -142,6 +178,24 @@ export default function Booking() {
         value={datetime}
         onChange={(e) => setDatetime(e.target.value)}
       />
+
+      {/* ✅ Champ téléphone */}
+      <div className="w-full max-w-md mb-4">
+        <div className="flex items-center gap-2 mb-1 text-sm text-zinc-400">
+          <Phone size={14} />
+          <span>Numéro de téléphone *</span>
+        </div>
+        <input
+          type="tel"
+          placeholder="06 12 34 56 78"
+          className="text-black p-2 rounded w-full"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
+        <p className="text-xs text-zinc-500 mt-1">
+          Pour vous contacter avant la prise en charge
+        </p>
+      </div>
 
       <select
         className="text-black p-2 mb-4 rounded w-full max-w-md"
@@ -191,11 +245,9 @@ export default function Booking() {
           <p>
             Prix estimé : <strong>{prix} €</strong>
           </p>
-          {kilometers && (
-            <p>
-              Distance estimée : <strong>{kilometers} km</strong>
-            </p>
-          )}
+          <p>
+            Distance estimée : <strong>{kilometers} km</strong>
+          </p>
 
           {showConfirmation && (
             <div className="mt-4">
