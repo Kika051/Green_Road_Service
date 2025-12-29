@@ -1,0 +1,411 @@
+{
+  "nav": {
+    "book": "Réserver",
+    "packages": "Forfaits",
+    "availability": "Mise à disposition",
+    "services": "Services",
+    "dashboard": "Dashboard",
+    "account": "Votre compte",
+    "logout": "Déconnexion",
+    "login": "Connexion"
+  },
+  "home": {
+    "title": "Votre chauffeur premium à Reims et en Champagne",
+    "subtitle": "Aéroports, gares, mariages, événements – réservez votre chauffeur électrique en toute sérénité.",
+    "cta": "Réserver maintenant",
+    "features": {
+      "vehicle": "Véhicule électrique haut de gamme",
+      "local": "Chauffeur local basé à Reims",
+      "punctuality": "Ponctualité & confort assurés"
+    }
+  },
+  "booking": {
+    "title": "Réserver une course",
+    "pickup": "Adresse de prise en charge",
+    "dropoff": "Adresse de destination",
+    "datetime": "Date et heure",
+    "phone": "Numéro de téléphone",
+    "phoneRequired": "Numéro de téléphone *",
+    "phoneHint": "Pour vous contacter avant la prise en charge",
+    "passengers": "passager",
+    "passengers_plural": "passagers",
+    "carSeat": "Siège auto",
+    "carSeatYes": "Siège auto : Oui",
+    "carSeatNo": "Siège auto : Non",
+    "seat": "siège",
+    "seats": "sièges",
+    "calculate": "Calculer le prix",
+    "calculating": "Calcul...",
+    "estimatedPrice": "Prix estimé",
+    "estimatedDistance": "Distance estimée",
+    "confirmQuestion": "Souhaitez-vous réserver cette course ?",
+    "yes": "Oui",
+    "no": "Non",
+    "successMessage": "Votre demande a bien été envoyée.",
+    "errors": {
+      "fillAddresses": "Merci de remplir les adresses.",
+      "enterPhone": "Veuillez entrer votre numéro de téléphone.",
+      "priceError": "Erreur lors du calcul du prix.",
+      "serverError": "Erreur serveur.",
+      "saveError": "Erreur lors de l'enregistrement."
+    }
+  },
+  "packages": {
+    "title": "Nos",
+    "titleHighlight": "Forfaits",
+    "subtitle": "Profitez de nos prix préférentiels pour vos trajets depuis Reims. Tarifs fixes, sans surprise !",
+    "savings": "Jusqu'à 20% d'économie par rapport au tarif standard",
+    "destinations": "destinations",
+    "book": "Réserver",
+    "perTrip": "/ trajet",
+    "categories": {
+      "airports": "Aéroports",
+      "champagne": "Route du Champagne",
+      "tourism": "Sites Touristiques",
+      "stations": "Gares TGV",
+      "cities": "Villes Proches"
+    },
+    "features": {
+      "premiumVehicle": "Véhicule Premium",
+      "premiumVehicleDesc": "Mercedes Classe E ou équivalent, climatisé, WiFi à bord",
+      "passengers": "Jusqu'à 4 passagers",
+      "passengersDesc": "Prix forfaitaire, pas de supplément par passager",
+      "freeCancellation": "Annulation gratuite",
+      "freeCancellationDesc": "Annulation sans frais jusqu'à 24h avant le départ"
+    },
+    "modal": {
+      "title": "Réserver ce forfait",
+      "pickupAddress": "Adresse de prise en charge *",
+      "pickupHint": "Commencez à taper pour voir les suggestions",
+      "phone": "Numéro de téléphone *",
+      "phoneHint": "Pour vous contacter avant la prise en charge",
+      "date": "Date *",
+      "time": "Heure de prise en charge *",
+      "passengers": "Nombre de passagers",
+      "roundTrip": "Aller-retour",
+      "comment": "Commentaire (optionnel)",
+      "commentPlaceholder": "Numéro de vol, instructions particulières...",
+      "tripSummary": "Récapitulatif du trajet",
+      "yourAddress": "Votre adresse",
+      "returnToAddress": "+ Retour vers votre adresse",
+      "totalPrice": "Prix total",
+      "trips": "trajets",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "sending": "Envoi..."
+    },
+    "alerts": {
+      "loginRequired": "Veuillez vous connecter pour réserver un forfait.",
+      "enterAddress": "Veuillez entrer votre adresse de prise en charge.",
+      "enterPhone": "Veuillez entrer votre numéro de téléphone.",
+      "success": "Votre réservation forfait a été envoyée ! Vous recevrez une confirmation après validation par notre chauffeur.",
+      "error": "Erreur lors de la réservation. Veuillez réessayer."
+    }
+  },
+  "availability": {
+    "title": "Mise à",
+    "titleHighlight": "disposition",
+    "subtitle": "Besoin d'un chauffeur pour plusieurs heures ? Mariage, événement d'entreprise, journée touristique... Nous nous adaptons à vos besoins.",
+    "form": {
+      "pickupAddress": "Adresse de prise en charge *",
+      "pickupPlaceholder": "Entrez l'adresse de départ...",
+      "date": "Date *",
+      "time": "Heure *",
+      "duration": "Durée de la mise à disposition *",
+      "durationPlaceholder": "Sélectionnez une durée",
+      "durations": {
+        "2h": "2 heures",
+        "3h": "3 heures",
+        "4h": "4 heures (demi-journée)",
+        "6h": "6 heures",
+        "8h": "8 heures (journée)",
+        "10h": "10 heures",
+        "12h": "12 heures",
+        "custom": "Autre (précisez dans les détails)"
+      },
+      "contactInfo": "Vos coordonnées",
+      "fullName": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Email *",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone *",
+      "phonePlaceholder": "06 XX XX XX XX",
+      "details": "Détails supplémentaires (optionnel)",
+      "detailsPlaceholder": "Type d'événement, nombre de passagers, itinéraire prévu, besoins spécifiques...",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi en cours...",
+      "consent": "En soumettant ce formulaire, vous acceptez d'être recontacté par notre équipe pour établir un devis personnalisé."
+    },
+    "success": {
+      "title": "Demande envoyée avec succès !",
+      "message": "Nous avons bien reçu votre demande de mise à disposition. Notre équipe vous recontactera dans les plus brefs délais pour établir un devis personnalisé.",
+      "newRequest": "Faire une nouvelle demande"
+    },
+    "pricing": {
+      "title": "Informations tarifaires",
+      "hourly": "Tarif horaire : à partir de 50€/heure",
+      "halfDay": "Demi-journée (4h) : à partir de 180€",
+      "fullDay": "Journée complète (8h) : à partir de 350€",
+      "mileage": "Kilométrage inclus selon la formule choisie",
+      "custom": "Devis personnalisé pour les événements spéciaux"
+    },
+    "errors": {
+      "generic": "Une erreur est survenue. Veuillez réessayer.",
+      "connection": "Erreur de connexion. Veuillez réessayer."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Nos Services",
+      "subtitle": "Un service VTC premium à Reims et en Champagne",
+      "bookTransfer": "Réserver un transfert",
+      "availability": "Mise à disposition"
+    },
+    "intro": {
+      "title": "Votre chauffeur privé en Champagne",
+      "description": "GreenRoad Services vous propose un service de transport haut de gamme avec chauffeur privé. Que ce soit pour vos déplacements professionnels, vos transferts aéroport ou vos sorties en Champagne, nous vous garantissons confort, ponctualité et discrétion."
+    },
+    "vehicle": {
+      "title": "Notre véhicule",
+      "exterior": "Extérieur",
+      "interior": "Intérieur",
+      "backseats": "Sièges arrière"
+    },
+    "packages": {
+      "title": "Nos forfaits",
+      "description": "Profitez de nos tarifs fixes pour vos trajets fréquents vers les aéroports, gares et destinations touristiques.",
+      "airports": "Transferts aéroports (CDG, Orly, Beauvais)",
+      "stations": "Transferts gares TGV",
+      "champagne": "Circuits découverte Champagne",
+      "viewAll": "Voir tous les forfaits"
+    },
+    "availability": {
+      "title": "Mise à disposition",
+      "description": "Besoin d'un chauffeur pour plusieurs heures ? Optez pour notre service de mise à disposition, idéal pour vos événements ou déplacements sur mesure.",
+      "services": {
+        "business": "Rendez-vous professionnels",
+        "events": "Mariages et événements",
+        "evenings": "Soirées et sorties",
+        "tours": "Visites touristiques"
+      },
+      "customRequest": "Demande personnalisée"
+    }
+  },
+  "auth": {
+    "loginTitle": "Connectez-vous à votre compte",
+    "signupTitle": "Créez votre compte",
+    "googleLogin": "Continuer avec Google",
+    "or": "ou",
+    "fullName": "Nom et prénom",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "login": "Se connecter",
+    "signup": "Créer mon compte",
+    "loading": "Chargement...",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "signupLink": "S'inscrire",
+    "loginLink": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "terms": "En continuant, vous acceptez nos",
+    "termsLink": "Conditions Générales",
+    "and": "et notre",
+    "privacyLink": "Politique de Confidentialité",
+    "verifyEmail": "Vérifiez votre email",
+    "resendEmail": "Renvoyer l'email de confirmation",
+    "errors": {
+      "enterName": "Veuillez entrer votre nom et prénom.",
+      "passwordMismatch": "Les mots de passe ne correspondent pas.",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères.",
+      "emailInUse": "Cette adresse email est déjà utilisée. Essayez de vous connecter.",
+      "invalidEmail": "Adresse email invalide.",
+      "weakPassword": "Mot de passe trop faible. Utilisez au moins 6 caractères.",
+      "networkError": "Erreur réseau. Vérifiez votre connexion internet.",
+      "userNotFound": "Aucun compte trouvé avec cette adresse email.",
+      "wrongPassword": "Mot de passe incorrect.",
+      "invalidCredential": "Email ou mot de passe incorrect.",
+      "tooManyAttempts": "Trop de tentatives. Veuillez réessayer dans quelques minutes.",
+      "emailNotVerified": "Votre adresse email n'est pas encore vérifiée. Veuillez consulter votre boîte mail et cliquer sur le lien de confirmation.",
+      "popupClosed": "Connexion annulée.",
+      "unauthorizedDomain": "Ce domaine n'est pas autorisé pour la connexion Google.",
+      "googleError": "Erreur de connexion avec Google. Veuillez réessayer.",
+      "genericError": "Erreur de connexion. Veuillez réessayer."
+    },
+    "success": {
+      "accountCreated": "Compte créé avec succès ! Un email de confirmation a été envoyé à",
+      "clickLink": "Veuillez cliquer sur le lien pour activer votre compte.",
+      "emailFailed": "L'envoi de l'email de vérification a échoué. Vous pouvez demander un nouvel envoi depuis la page de connexion.",
+      "emailResent": "Un nouvel email de confirmation a été envoyé à",
+      "alreadyVerified": "Votre email est déjà vérifié. Vous pouvez vous connecter."
+    }
+  },
+  "account": {
+    "title": "Mes courses",
+    "noBookings": "Aucune course réservée pour l'instant.",
+    "sections": {
+      "pending": "Courses en attente",
+      "pendingMessage": "En attente de validation par notre chauffeur...",
+      "accepted": "Courses acceptées - Paiement requis",
+      "confirmed": "Courses confirmées",
+      "cancelled": "Courses annulées",
+      "refused": "Courses refusées"
+    },
+    "pay": "Payer",
+    "invoice": "Facture PDF",
+    "loading": "Chargement...",
+    "loadingUser": "Chargement utilisateur...",
+    "cancel": {
+      "button": "Annuler",
+      "confirmMessage": "Êtes-vous sûr de vouloir annuler cette course ?",
+      "confirmWithFees": "Attention : l'annulation moins de 5h avant la course entraîne des frais de 30%. Confirmer l'annulation ?",
+      "reasonPrompt": "Raison de l'annulation (optionnel) :",
+      "success": "Course annulée avec succès.",
+      "partialRefund": "Frais d'annulation : {{fee}}€. Remboursement : {{refund}}€.",
+      "fullRefund": "Remboursement total : {{refund}}€.",
+      "error": "Erreur lors de l'annulation."
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord chauffeur",
+    "sections": {
+      "pending": "Courses en attente",
+      "accepted": "Courses acceptées (en attente de paiement)",
+      "confirmed": "Courses confirmées (payées)",
+      "cancelled": "Courses annulées",
+      "refused": "Courses refusées"
+    },
+    "noRides": "Aucune course.",
+    "trip": "Trajet",
+    "date": "Date",
+    "passengers": "Passagers",
+    "distance": "Distance",
+    "price": "Prix",
+    "client": "Client",
+    "phone": "Tél",
+    "package": "Forfait",
+    "roundTrip": "Aller-retour",
+    "accept": "Accepter",
+    "refuse": "Refuser",
+    "orderForm": "Bon de commande",
+    "confirmAccept": "Accepter cette course ? Un email avec le lien de paiement sera envoyé au client.",
+    "confirmRefuse": "Refuser cette course ? Un email sera envoyé au client pour l'informer.",
+    "refuseReason": "Motif du refus (optionnel) :",
+    "defaultRefuseReason": "Indisponibilité du chauffeur",
+    "alerts": {
+      "mustLogin": "Vous devez être connecté.",
+      "acceptSuccess": "Course acceptée ! Le client a reçu un email avec le lien de paiement.",
+      "refuseSuccess": "Course refusée. Le client a été notifié par email.",
+      "error": "Erreur :",
+      "acceptError": "Impossible d'accepter la course",
+      "refuseError": "Impossible de refuser la course",
+      "serverError": "Erreur serveur lors de l'acceptation."
+    },
+    "loading": "Chargement des courses...",
+    "cancel": {
+      "button": "Annuler",
+      "confirmMessage": "Annuler cette course ? Le client sera remboursé intégralement.",
+      "reasonPrompt": "Raison de l'annulation :",
+      "success": "Course annulée. Le client a été notifié et remboursé.",
+      "error": "Erreur lors de l'annulation."
+    }
+  },
+  "payment": {
+    "success": {
+      "title": "Paiement réussi !",
+      "message": "Votre réservation est confirmée."
+    },
+    "cancel": {
+      "title": "Paiement annulé",
+      "message": "Votre paiement a été annulé."
+    }
+  },
+  "common": {
+    "km": "km",
+    "euro": "€",
+    "dateUnknown": "Date inconnue",
+    "notSpecified": "Non précisée",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement...",
+    "passengers": "passagers",
+    "roundTrip": "Aller-retour"
+  },
+  "forfaits": {
+    "title": "Nos",
+    "titleHighlight": "Forfaits",
+    "subtitle": "Profitez de nos prix préférentiels pour vos trajets depuis Reims. Tarifs fixes, sans surprise !",
+    "savings": "Jusqu'à 20% d'économie par rapport au tarif standard",
+    "destinations": "destinations",
+    "book": "Réserver",
+    "perTrip": "/ trajet",
+    "categories": {
+      "airports": "Aéroports",
+      "champagne": "Route du Champagne",
+      "tourism": "Sites Touristiques",
+      "stations": "Gares TGV",
+      "cities": "Villes Proches"
+    },
+    "destinations": {
+      "cdg": "Aéroport Paris CDG",
+      "orly": "Aéroport Paris Orly",
+      "beauvais": "Aéroport Beauvais-Tillé",
+      "vatry": "Aéroport Châlons-Vatry",
+      "epernay": "Épernay - Avenue de Champagne",
+      "hautvillers": "Hautvillers - Village de Dom Pérignon",
+      "ay": "Aÿ-Champagne",
+      "verzenay": "Verzenay - Phare et Musée de la Vigne",
+      "bouzy": "Bouzy - Coteaux Champenois",
+      "cathedrale": "Cathédrale Notre-Dame de Reims",
+      "palaisTau": "Palais du Tau",
+      "basilique": "Basilique Saint-Remi",
+      "fortPompelle": "Fort de la Pompelle",
+      "cavesPommery": "Caves Pommery",
+      "cavesTaittinger": "Caves Taittinger",
+      "gareReims": "Gare de Reims Centre",
+      "gareChampagne": "Gare Champagne-Ardenne TGV",
+      "gareParisEst": "Gare de Paris Est",
+      "paris": "Paris Centre",
+      "chalons": "Châlons-en-Champagne",
+      "charleville": "Charleville-Mézières",
+      "troyes": "Troyes",
+      "laon": "Laon"
+    },
+    "features": {
+      "premiumVehicle": "Véhicule Premium",
+      "premiumVehicleDesc": "Mercedes Classe E ou équivalent, climatisé, WiFi à bord",
+      "passengers": "Jusqu'à 4 passagers",
+      "passengersDesc": "Prix forfaitaire, pas de supplément par passager",
+      "freeCancellation": "Annulation gratuite",
+      "freeCancellationDesc": "Annulation sans frais jusqu'à 24h avant le départ"
+    },
+    "modal": {
+      "title": "Réserver ce forfait",
+      "pickupAddress": "Adresse de prise en charge *",
+      "pickupHint": "Commencez à taper pour voir les suggestions",
+      "phone": "Numéro de téléphone *",
+      "phoneHint": "Pour vous contacter avant la prise en charge",
+      "date": "Date *",
+      "time": "Heure de prise en charge *",
+      "passengers": "Nombre de passagers",
+      "roundTrip": "Aller-retour",
+      "comment": "Commentaire (optionnel)",
+      "commentPlaceholder": "Numéro de vol, instructions particulières...",
+      "tripSummary": "Récapitulatif du trajet",
+      "yourAddress": "Votre adresse",
+      "returnToAddress": "+ Retour vers votre adresse",
+      "totalPrice": "Prix total",
+      "trips": "trajets",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "sending": "Envoi..."
+    },
+    "alerts": {
+      "loginRequired": "Veuillez vous connecter pour réserver un forfait.",
+      "enterAddress": "Veuillez entrer votre adresse de prise en charge.",
+      "enterPhone": "Veuillez entrer votre numéro de téléphone.",
+      "success": "Votre réservation forfait a été envoyée ! Vous recevrez une confirmation après validation par notre chauffeur.",
+      "error": "Erreur lors de la réservation. Veuillez réessayer."
+    }
+  }
+}

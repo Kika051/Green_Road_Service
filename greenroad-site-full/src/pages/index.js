@@ -1,0 +1,11 @@
+export { default as Home } from './Home';
+export { default as Booking } from './Booking';
+export { default as Services } from './Services';
+export { default as Forfaits } from './Forfaits';
+export { default as MiseADisposition } from './MiseADisposition';
+export { default as MyAccount } from './MyAccount';
+export { default as Auth } from './Auth';
+export { default as ForgotPassword } from './ForgotPassword';
+export { default as DriverDashboard } from './DriverDashboard';
+export { default as PaymentSuccess } from './PaymentSuccess';
+export { default as PaymentCancel } from './PaymentCancel';

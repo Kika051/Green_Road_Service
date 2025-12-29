@@ -1,0 +1,411 @@
+{
+  "nav": {
+    "book": "Buchen",
+    "packages": "Pakete",
+    "availability": "Chauffeurservice",
+    "services": "Dienstleistungen",
+    "dashboard": "Dashboard",
+    "account": "Ihr Konto",
+    "logout": "Abmelden",
+    "login": "Anmelden"
+  },
+  "home": {
+    "title": "Ihr Premium-Chauffeur in Reims und der Champagne",
+    "subtitle": "Flughäfen, Bahnhöfe, Hochzeiten, Events – buchen Sie Ihren Elektro-Chauffeur mit voller Gelassenheit.",
+    "cta": "Jetzt buchen",
+    "features": {
+      "vehicle": "Hochwertiges Elektrofahrzeug",
+      "local": "Lokaler Fahrer aus Reims",
+      "punctuality": "Pünktlichkeit & Komfort garantiert"
+    }
+  },
+  "booking": {
+    "title": "Eine Fahrt buchen",
+    "pickup": "Abholadresse",
+    "dropoff": "Zieladresse",
+    "datetime": "Datum und Uhrzeit",
+    "phone": "Telefonnummer",
+    "phoneRequired": "Telefonnummer *",
+    "phoneHint": "Um Sie vor der Abholung zu kontaktieren",
+    "passengers": "Passagier",
+    "passengers_plural": "Passagiere",
+    "carSeat": "Kindersitz",
+    "carSeatYes": "Kindersitz: Ja",
+    "carSeatNo": "Kindersitz: Nein",
+    "seat": "Sitz",
+    "seats": "Sitze",
+    "calculate": "Preis berechnen",
+    "calculating": "Berechnung...",
+    "estimatedPrice": "Geschätzter Preis",
+    "estimatedDistance": "Geschätzte Entfernung",
+    "confirmQuestion": "Möchten Sie diese Fahrt buchen?",
+    "yes": "Ja",
+    "no": "Nein",
+    "successMessage": "Ihre Anfrage wurde gesendet.",
+    "errors": {
+      "fillAddresses": "Bitte füllen Sie die Adressen aus.",
+      "enterPhone": "Bitte geben Sie Ihre Telefonnummer ein.",
+      "priceError": "Fehler bei der Preisberechnung.",
+      "serverError": "Serverfehler.",
+      "saveError": "Fehler beim Speichern der Buchung."
+    }
+  },
+  "packages": {
+    "title": "Unsere",
+    "titleHighlight": "Pakete",
+    "subtitle": "Profitieren Sie von unseren Vorzugspreisen für Ihre Fahrten ab Reims. Festpreise, ohne Überraschungen!",
+    "savings": "Bis zu 20% Ersparnis im Vergleich zum Standardpreis",
+    "destinations": "Ziele",
+    "book": "Buchen",
+    "perTrip": "/ Fahrt",
+    "categories": {
+      "airports": "Flughäfen",
+      "champagne": "Champagner-Route",
+      "tourism": "Sehenswürdigkeiten",
+      "stations": "TGV-Bahnhöfe",
+      "cities": "Nahegelegene Städte"
+    },
+    "features": {
+      "premiumVehicle": "Premium-Fahrzeug",
+      "premiumVehicleDesc": "Mercedes E-Klasse oder gleichwertig, klimatisiert, WLAN an Bord",
+      "passengers": "Bis zu 4 Passagiere",
+      "passengersDesc": "Pauschalpreis, kein Aufpreis pro Passagier",
+      "freeCancellation": "Kostenlose Stornierung",
+      "freeCancellationDesc": "Kostenlose Stornierung bis 24 Stunden vor Abfahrt"
+    },
+    "modal": {
+      "title": "Dieses Paket buchen",
+      "pickupAddress": "Abholadresse *",
+      "pickupHint": "Tippen Sie, um Vorschläge zu sehen",
+      "phone": "Telefonnummer *",
+      "phoneHint": "Um Sie vor der Abholung zu kontaktieren",
+      "date": "Datum *",
+      "time": "Abholzeit *",
+      "passengers": "Anzahl der Passagiere",
+      "roundTrip": "Hin- und Rückfahrt",
+      "comment": "Kommentar (optional)",
+      "commentPlaceholder": "Flugnummer, besondere Anweisungen...",
+      "tripSummary": "Fahrtübersicht",
+      "yourAddress": "Ihre Adresse",
+      "returnToAddress": "+ Rückfahrt zu Ihrer Adresse",
+      "totalPrice": "Gesamtpreis",
+      "trips": "Fahrten",
+      "cancel": "Abbrechen",
+      "confirm": "Bestätigen",
+      "sending": "Wird gesendet..."
+    },
+    "alerts": {
+      "loginRequired": "Bitte melden Sie sich an, um ein Paket zu buchen.",
+      "enterAddress": "Bitte geben Sie Ihre Abholadresse ein.",
+      "enterPhone": "Bitte geben Sie Ihre Telefonnummer ein.",
+      "success": "Ihre Paketbuchung wurde gesendet! Sie erhalten eine Bestätigung nach Validierung durch unseren Fahrer.",
+      "error": "Fehler bei der Buchung. Bitte versuchen Sie es erneut."
+    }
+  },
+  "availability": {
+    "title": "Chauffeur",
+    "titleHighlight": "Service",
+    "subtitle": "Benötigen Sie einen Fahrer für mehrere Stunden? Hochzeit, Firmenveranstaltung, Touristentag... Wir passen uns Ihren Bedürfnissen an.",
+    "form": {
+      "pickupAddress": "Abholadresse *",
+      "pickupPlaceholder": "Geben Sie die Abfahrtsadresse ein...",
+      "date": "Datum *",
+      "time": "Uhrzeit *",
+      "duration": "Dauer des Services *",
+      "durationPlaceholder": "Wählen Sie eine Dauer",
+      "durations": {
+        "2h": "2 Stunden",
+        "3h": "3 Stunden",
+        "4h": "4 Stunden (halber Tag)",
+        "6h": "6 Stunden",
+        "8h": "8 Stunden (ganzer Tag)",
+        "10h": "10 Stunden",
+        "12h": "12 Stunden",
+        "custom": "Andere (in Details angeben)"
+      },
+      "contactInfo": "Ihre Kontaktdaten",
+      "fullName": "Vollständiger Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail *",
+      "emailPlaceholder": "ihre@email.com",
+      "phone": "Telefon *",
+      "phonePlaceholder": "+49 XXX XXXXXXX",
+      "details": "Zusätzliche Details (optional)",
+      "detailsPlaceholder": "Art der Veranstaltung, Anzahl der Passagiere, geplante Route, besondere Bedürfnisse...",
+      "submit": "Meine Anfrage senden",
+      "sending": "Wird gesendet...",
+      "consent": "Mit dem Absenden dieses Formulars erklären Sie sich damit einverstanden, von unserem Team kontaktiert zu werden, um ein individuelles Angebot zu erstellen."
+    },
+    "success": {
+      "title": "Anfrage erfolgreich gesendet!",
+      "message": "Wir haben Ihre Chauffeur-Service-Anfrage erhalten. Unser Team wird sich so schnell wie möglich bei Ihnen melden, um ein individuelles Angebot zu erstellen.",
+      "newRequest": "Neue Anfrage stellen"
+    },
+    "pricing": {
+      "title": "Preisinformationen",
+      "hourly": "Stundensatz: ab 50€/Stunde",
+      "halfDay": "Halber Tag (4h): ab 180€",
+      "fullDay": "Ganzer Tag (8h): ab 350€",
+      "mileage": "Kilometerleistung je nach gewähltem Paket inklusive",
+      "custom": "Individuelles Angebot für besondere Veranstaltungen"
+    },
+    "errors": {
+      "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "connection": "Verbindungsfehler. Bitte versuchen Sie es erneut."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Ein Premium-Chauffeurservice in Reims und der Champagne",
+      "bookTransfer": "Transfer buchen",
+      "availability": "Stundenweise Buchung"
+    },
+    "intro": {
+      "title": "Ihr privater Chauffeur in der Champagne",
+      "description": "GreenRoad Services bietet Ihnen einen erstklassigen Transportservice mit privatem Chauffeur. Ob für Geschäftsreisen, Flughafentransfers oder Ausflüge in die Champagne – wir garantieren Komfort, Pünktlichkeit und Diskretion."
+    },
+    "vehicle": {
+      "title": "Unser Fahrzeug",
+      "exterior": "Außenansicht",
+      "interior": "Innenraum",
+      "backseats": "Rücksitze"
+    },
+    "packages": {
+      "title": "Unsere Pauschalen",
+      "description": "Profitieren Sie von unseren Festpreisen für Ihre häufigen Fahrten zu Flughäfen, Bahnhöfen und touristischen Zielen.",
+      "airports": "Flughafentransfers (CDG, Orly, Beauvais)",
+      "stations": "TGV-Bahnhofstransfers",
+      "champagne": "Champagne-Entdeckungstouren",
+      "viewAll": "Alle Pauschalen ansehen"
+    },
+    "availability": {
+      "title": "Stundenweise Buchung",
+      "description": "Brauchen Sie einen Chauffeur für mehrere Stunden? Wählen Sie unseren stundenweisen Service, ideal für Ihre Veranstaltungen oder individuelle Fahrten.",
+      "services": {
+        "business": "Geschäftstermine",
+        "events": "Hochzeiten und Veranstaltungen",
+        "evenings": "Abende und Ausgehen",
+        "tours": "Sightseeing-Touren"
+      },
+      "customRequest": "Individuelle Anfrage"
+    }
+  },
+  "auth": {
+    "loginTitle": "In Ihr Konto einloggen",
+    "signupTitle": "Konto erstellen",
+    "googleLogin": "Mit Google fortfahren",
+    "or": "oder",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "login": "Anmelden",
+    "signup": "Mein Konto erstellen",
+    "loading": "Laden...",
+    "noAccount": "Noch kein Konto?",
+    "hasAccount": "Bereits ein Konto?",
+    "signupLink": "Registrieren",
+    "loginLink": "Anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "terms": "Mit dem Fortfahren akzeptieren Sie unsere",
+    "termsLink": "Allgemeinen Geschäftsbedingungen",
+    "and": "und unsere",
+    "privacyLink": "Datenschutzrichtlinie",
+    "verifyEmail": "Überprüfen Sie Ihre E-Mail",
+    "resendEmail": "Bestätigungs-E-Mail erneut senden",
+    "errors": {
+      "enterName": "Bitte geben Sie Ihren vollständigen Namen ein.",
+      "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+      "passwordTooShort": "Das Passwort muss mindestens 6 Zeichen lang sein.",
+      "emailInUse": "Diese E-Mail-Adresse wird bereits verwendet. Versuchen Sie sich anzumelden.",
+      "invalidEmail": "Ungültige E-Mail-Adresse.",
+      "weakPassword": "Passwort zu schwach. Verwenden Sie mindestens 6 Zeichen.",
+      "networkError": "Netzwerkfehler. Überprüfen Sie Ihre Internetverbindung.",
+      "userNotFound": "Kein Konto mit dieser E-Mail-Adresse gefunden.",
+      "wrongPassword": "Falsches Passwort.",
+      "invalidCredential": "Falsche E-Mail oder falsches Passwort.",
+      "tooManyAttempts": "Zu viele Versuche. Bitte versuchen Sie es in einigen Minuten erneut.",
+      "emailNotVerified": "Ihre E-Mail-Adresse wurde noch nicht verifiziert. Bitte überprüfen Sie Ihren Posteingang und klicken Sie auf den Bestätigungslink.",
+      "popupClosed": "Anmeldung abgebrochen.",
+      "unauthorizedDomain": "Diese Domain ist für die Google-Anmeldung nicht autorisiert.",
+      "googleError": "Fehler bei der Anmeldung mit Google. Bitte versuchen Sie es erneut.",
+      "genericError": "Anmeldefehler. Bitte versuchen Sie es erneut."
+    },
+    "success": {
+      "accountCreated": "Konto erfolgreich erstellt! Eine Bestätigungs-E-Mail wurde gesendet an",
+      "clickLink": "Bitte klicken Sie auf den Link, um Ihr Konto zu aktivieren.",
+      "emailFailed": "Das Senden der Bestätigungs-E-Mail ist fehlgeschlagen. Sie können eine neue von der Anmeldeseite anfordern.",
+      "emailResent": "Eine neue Bestätigungs-E-Mail wurde gesendet an",
+      "alreadyVerified": "Ihre E-Mail ist bereits verifiziert. Sie können sich anmelden."
+    }
+  },
+  "account": {
+    "title": "Meine Fahrten",
+    "noBookings": "Noch keine Fahrten gebucht.",
+    "sections": {
+      "pending": "Ausstehende Fahrten",
+      "pendingMessage": "Warten auf Fahrerbestätigung...",
+      "accepted": "Akzeptierte Fahrten - Zahlung erforderlich",
+      "confirmed": "Bestätigte Fahrten",
+      "cancelled": "Stornierte Fahrten",
+      "refused": "Abgelehnte Fahrten"
+    },
+    "pay": "Bezahlen",
+    "invoice": "Rechnung PDF",
+    "loading": "Laden...",
+    "loadingUser": "Benutzer wird geladen...",
+    "cancel": {
+      "button": "Stornieren",
+      "confirmMessage": "Sind Sie sicher, dass Sie diese Fahrt stornieren möchten?",
+      "confirmWithFees": "Achtung: Bei einer Stornierung weniger als 5 Stunden vor der Fahrt fallen 30% Stornogebühren an. Stornierung bestätigen?",
+      "reasonPrompt": "Grund für die Stornierung (optional):",
+      "success": "Fahrt erfolgreich storniert.",
+      "partialRefund": "Stornogebühr: {{fee}}€. Rückerstattung: {{refund}}€.",
+      "fullRefund": "Vollständige Rückerstattung: {{refund}}€.",
+      "error": "Fehler bei der Stornierung."
+    }
+  },
+  "dashboard": {
+    "title": "Fahrer-Dashboard",
+    "sections": {
+      "pending": "Ausstehende Fahrten",
+      "accepted": "Akzeptierte Fahrten (Zahlung ausstehend)",
+      "confirmed": "Bestätigte Fahrten (bezahlt)",
+      "cancelled": "Stornierte Fahrten",
+      "refused": "Abgelehnte Fahrten"
+    },
+    "noRides": "Keine Fahrten.",
+    "trip": "Fahrt",
+    "date": "Datum",
+    "passengers": "Passagiere",
+    "distance": "Entfernung",
+    "price": "Preis",
+    "client": "Kunde",
+    "phone": "Telefon",
+    "package": "Paket",
+    "roundTrip": "Hin- und Rückfahrt",
+    "accept": "Akzeptieren",
+    "refuse": "Ablehnen",
+    "orderForm": "Bestellformular",
+    "confirmAccept": "Diese Fahrt akzeptieren? Eine E-Mail mit dem Zahlungslink wird an den Kunden gesendet.",
+    "confirmRefuse": "Diese Fahrt ablehnen? Der Kunde wird per E-Mail benachrichtigt.",
+    "refuseReason": "Grund für die Ablehnung (optional):",
+    "defaultRefuseReason": "Fahrer nicht verfügbar",
+    "alerts": {
+      "mustLogin": "Sie müssen angemeldet sein.",
+      "acceptSuccess": "Fahrt akzeptiert! Der Kunde hat eine E-Mail mit dem Zahlungslink erhalten.",
+      "refuseSuccess": "Fahrt abgelehnt. Der Kunde wurde per E-Mail benachrichtigt.",
+      "error": "Fehler:",
+      "acceptError": "Fahrt konnte nicht akzeptiert werden",
+      "refuseError": "Fahrt konnte nicht abgelehnt werden",
+      "serverError": "Serverfehler bei der Annahme."
+    },
+    "loading": "Fahrten werden geladen...",
+    "cancel": {
+      "button": "Stornieren",
+      "confirmMessage": "Diese Fahrt stornieren? Der Kunde wird vollständig erstattet.",
+      "reasonPrompt": "Grund für die Stornierung:",
+      "success": "Fahrt storniert. Der Kunde wurde benachrichtigt und erstattet.",
+      "error": "Fehler bei der Stornierung."
+    }
+  },
+  "payment": {
+    "success": {
+      "title": "Zahlung erfolgreich!",
+      "message": "Ihre Buchung ist bestätigt."
+    },
+    "cancel": {
+      "title": "Zahlung abgebrochen",
+      "message": "Ihre Zahlung wurde abgebrochen."
+    }
+  },
+  "common": {
+    "km": "km",
+    "euro": "€",
+    "dateUnknown": "Datum unbekannt",
+    "notSpecified": "Nicht angegeben",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "loading": "Laden...",
+    "passengers": "Passagiere",
+    "roundTrip": "Hin- und Rückfahrt"
+  },
+  "forfaits": {
+    "title": "Unsere",
+    "titleHighlight": "Pakete",
+    "subtitle": "Profitieren Sie von unseren Vorzugspreisen für Ihre Fahrten ab Reims. Festpreise, ohne Überraschungen!",
+    "savings": "Bis zu 20% Ersparnis im Vergleich zum Standardpreis",
+    "destinations": "Ziele",
+    "book": "Buchen",
+    "perTrip": "/ Fahrt",
+    "categories": {
+      "airports": "Flughäfen",
+      "champagne": "Champagner-Route",
+      "tourism": "Sehenswürdigkeiten",
+      "stations": "TGV-Bahnhöfe",
+      "cities": "Nahegelegene Städte"
+    },
+    "destinations": {
+      "cdg": "Flughafen Paris CDG",
+      "orly": "Flughafen Paris Orly",
+      "beauvais": "Flughafen Beauvais-Tillé",
+      "vatry": "Flughafen Châlons-Vatry",
+      "epernay": "Épernay - Avenue de Champagne",
+      "hautvillers": "Hautvillers - Dom Pérignon Dorf",
+      "ay": "Aÿ-Champagne",
+      "verzenay": "Verzenay - Leuchtturm & Weinmuseum",
+      "bouzy": "Bouzy - Champagner-Hügel",
+      "cathedrale": "Kathedrale Notre-Dame de Reims",
+      "palaisTau": "Palais du Tau",
+      "basilique": "Basilika Saint-Remi",
+      "fortPompelle": "Fort de la Pompelle",
+      "cavesPommery": "Pommery Weinkeller",
+      "cavesTaittinger": "Taittinger Weinkeller",
+      "gareReims": "Bahnhof Reims Zentrum",
+      "gareChampagne": "Bahnhof Champagne-Ardenne TGV",
+      "gareParisEst": "Bahnhof Paris Est",
+      "paris": "Paris Zentrum",
+      "chalons": "Châlons-en-Champagne",
+      "charleville": "Charleville-Mézières",
+      "troyes": "Troyes",
+      "laon": "Laon"
+    },
+    "features": {
+      "premiumVehicle": "Premium-Fahrzeug",
+      "premiumVehicleDesc": "Mercedes E-Klasse oder gleichwertig, klimatisiert, WLAN an Bord",
+      "passengers": "Bis zu 4 Passagiere",
+      "passengersDesc": "Pauschalpreis, kein Aufpreis pro Passagier",
+      "freeCancellation": "Kostenlose Stornierung",
+      "freeCancellationDesc": "Kostenlose Stornierung bis 24 Stunden vor Abfahrt"
+    },
+    "modal": {
+      "title": "Dieses Paket buchen",
+      "pickupAddress": "Abholadresse *",
+      "pickupHint": "Tippen Sie, um Vorschläge zu sehen",
+      "phone": "Telefonnummer *",
+      "phoneHint": "Um Sie vor der Abholung zu kontaktieren",
+      "date": "Datum *",
+      "time": "Abholzeit *",
+      "passengers": "Anzahl der Passagiere",
+      "roundTrip": "Hin- und Rückfahrt",
+      "comment": "Kommentar (optional)",
+      "commentPlaceholder": "Flugnummer, besondere Anweisungen...",
+      "tripSummary": "Fahrtübersicht",
+      "yourAddress": "Ihre Adresse",
+      "returnToAddress": "+ Rückfahrt zu Ihrer Adresse",
+      "totalPrice": "Gesamtpreis",
+      "trips": "Fahrten",
+      "cancel": "Abbrechen",
+      "confirm": "Bestätigen",
+      "sending": "Wird gesendet..."
+    },
+    "alerts": {
+      "loginRequired": "Bitte melden Sie sich an, um ein Paket zu buchen.",
+      "enterAddress": "Bitte geben Sie Ihre Abholadresse ein.",
+      "enterPhone": "Bitte geben Sie Ihre Telefonnummer ein.",
+      "success": "Ihre Paketbuchung wurde gesendet! Sie erhalten eine Bestätigung nach Validierung durch unseren Fahrer.",
+      "error": "Fehler bei der Buchung. Bitte versuchen Sie es erneut."
+    }
+  }
+}

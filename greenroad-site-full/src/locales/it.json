@@ -1,0 +1,411 @@
+{
+  "nav": {
+    "book": "Prenota",
+    "packages": "Pacchetti",
+    "availability": "Servizio Autista",
+    "services": "Servizi",
+    "dashboard": "Dashboard",
+    "account": "Il tuo account",
+    "logout": "Esci",
+    "login": "Accedi"
+  },
+  "home": {
+    "title": "Il tuo autista premium a Reims e in Champagne",
+    "subtitle": "Aeroporti, stazioni, matrimoni, eventi – prenota il tuo autista elettrico in tutta tranquillità.",
+    "cta": "Prenota ora",
+    "features": {
+      "vehicle": "Veicolo elettrico di alta gamma",
+      "local": "Autista locale con sede a Reims",
+      "punctuality": "Puntualità e comfort garantiti"
+    }
+  },
+  "booking": {
+    "title": "Prenota una corsa",
+    "pickup": "Indirizzo di partenza",
+    "dropoff": "Indirizzo di destinazione",
+    "datetime": "Data e ora",
+    "phone": "Numero di telefono",
+    "phoneRequired": "Numero di telefono *",
+    "phoneHint": "Per contattarti prima del ritiro",
+    "passengers": "passeggero",
+    "passengers_plural": "passeggeri",
+    "carSeat": "Seggiolino auto",
+    "carSeatYes": "Seggiolino auto: Sì",
+    "carSeatNo": "Seggiolino auto: No",
+    "seat": "seggiolino",
+    "seats": "seggiolini",
+    "calculate": "Calcola il prezzo",
+    "calculating": "Calcolo...",
+    "estimatedPrice": "Prezzo stimato",
+    "estimatedDistance": "Distanza stimata",
+    "confirmQuestion": "Vuoi prenotare questa corsa?",
+    "yes": "Sì",
+    "no": "No",
+    "successMessage": "La tua richiesta è stata inviata.",
+    "errors": {
+      "fillAddresses": "Per favore compila gli indirizzi.",
+      "enterPhone": "Per favore inserisci il tuo numero di telefono.",
+      "priceError": "Errore nel calcolo del prezzo.",
+      "serverError": "Errore del server.",
+      "saveError": "Errore nel salvataggio della prenotazione."
+    }
+  },
+  "packages": {
+    "title": "I nostri",
+    "titleHighlight": "Pacchetti",
+    "subtitle": "Approfitta delle nostre tariffe preferenziali per i tuoi viaggi da Reims. Prezzi fissi, senza sorprese!",
+    "savings": "Fino al 20% di risparmio rispetto alla tariffa standard",
+    "destinations": "destinazioni",
+    "book": "Prenota",
+    "perTrip": "/ corsa",
+    "categories": {
+      "airports": "Aeroporti",
+      "champagne": "Strada dello Champagne",
+      "tourism": "Siti Turistici",
+      "stations": "Stazioni TGV",
+      "cities": "Città Vicine"
+    },
+    "features": {
+      "premiumVehicle": "Veicolo Premium",
+      "premiumVehicleDesc": "Mercedes Classe E o equivalente, climatizzato, WiFi a bordo",
+      "passengers": "Fino a 4 passeggeri",
+      "passengersDesc": "Tariffa fissa, nessun supplemento per passeggero",
+      "freeCancellation": "Cancellazione gratuita",
+      "freeCancellationDesc": "Cancellazione gratuita fino a 24 ore prima della partenza"
+    },
+    "modal": {
+      "title": "Prenota questo pacchetto",
+      "pickupAddress": "Indirizzo di partenza *",
+      "pickupHint": "Inizia a digitare per vedere i suggerimenti",
+      "phone": "Numero di telefono *",
+      "phoneHint": "Per contattarti prima del ritiro",
+      "date": "Data *",
+      "time": "Ora di ritiro *",
+      "passengers": "Numero di passeggeri",
+      "roundTrip": "Andata e ritorno",
+      "comment": "Commento (opzionale)",
+      "commentPlaceholder": "Numero di volo, istruzioni speciali...",
+      "tripSummary": "Riepilogo del viaggio",
+      "yourAddress": "Il tuo indirizzo",
+      "returnToAddress": "+ Ritorno al tuo indirizzo",
+      "totalPrice": "Prezzo totale",
+      "trips": "corse",
+      "cancel": "Annulla",
+      "confirm": "Conferma",
+      "sending": "Invio..."
+    },
+    "alerts": {
+      "loginRequired": "Per favore accedi per prenotare un pacchetto.",
+      "enterAddress": "Per favore inserisci il tuo indirizzo di partenza.",
+      "enterPhone": "Per favore inserisci il tuo numero di telefono.",
+      "success": "La tua prenotazione del pacchetto è stata inviata! Riceverai una conferma dopo la validazione da parte del nostro autista.",
+      "error": "Errore durante la prenotazione. Per favore riprova."
+    }
+  },
+  "availability": {
+    "title": "Servizio",
+    "titleHighlight": "Autista",
+    "subtitle": "Hai bisogno di un autista per diverse ore? Matrimonio, evento aziendale, giornata turistica... Ci adattiamo alle tue esigenze.",
+    "form": {
+      "pickupAddress": "Indirizzo di partenza *",
+      "pickupPlaceholder": "Inserisci l'indirizzo di partenza...",
+      "date": "Data *",
+      "time": "Ora *",
+      "duration": "Durata del servizio *",
+      "durationPlaceholder": "Seleziona una durata",
+      "durations": {
+        "2h": "2 ore",
+        "3h": "3 ore",
+        "4h": "4 ore (mezza giornata)",
+        "6h": "6 ore",
+        "8h": "8 ore (giornata intera)",
+        "10h": "10 ore",
+        "12h": "12 ore",
+        "custom": "Altro (specifica nei dettagli)"
+      },
+      "contactInfo": "I tuoi dati di contatto",
+      "fullName": "Nome completo",
+      "namePlaceholder": "Il tuo nome",
+      "email": "Email *",
+      "emailPlaceholder": "tua@email.com",
+      "phone": "Telefono *",
+      "phonePlaceholder": "+39 XXX XXXXXXX",
+      "details": "Dettagli aggiuntivi (opzionale)",
+      "detailsPlaceholder": "Tipo di evento, numero di passeggeri, itinerario previsto, esigenze specifiche...",
+      "submit": "Invia la mia richiesta",
+      "sending": "Invio in corso...",
+      "consent": "Inviando questo modulo, accetti di essere contattato dal nostro team per ricevere un preventivo personalizzato."
+    },
+    "success": {
+      "title": "Richiesta inviata con successo!",
+      "message": "Abbiamo ricevuto la tua richiesta di servizio autista. Il nostro team ti contatterà il prima possibile per fornirti un preventivo personalizzato.",
+      "newRequest": "Fai una nuova richiesta"
+    },
+    "pricing": {
+      "title": "Informazioni sui prezzi",
+      "hourly": "Tariffa oraria: da 50€/ora",
+      "halfDay": "Mezza giornata (4h): da 180€",
+      "fullDay": "Giornata intera (8h): da 350€",
+      "mileage": "Chilometraggio incluso in base al pacchetto scelto",
+      "custom": "Preventivo personalizzato per eventi speciali"
+    },
+    "errors": {
+      "generic": "Si è verificato un errore. Per favore riprova.",
+      "connection": "Errore di connessione. Per favore riprova."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "I nostri servizi",
+      "subtitle": "Un servizio VTC premium a Reims e in Champagne",
+      "bookTransfer": "Prenota un trasferimento",
+      "availability": "Noleggio a ore"
+    },
+    "intro": {
+      "title": "Il tuo autista privato in Champagne",
+      "description": "GreenRoad Services offre un servizio di trasporto di alta gamma con autista privato. Che si tratti di viaggi d'affari, trasferimenti aeroportuali o escursioni in Champagne, garantiamo comfort, puntualità e discrezione."
+    },
+    "vehicle": {
+      "title": "Il nostro veicolo",
+      "exterior": "Esterno",
+      "interior": "Interno",
+      "backseats": "Sedili posteriori"
+    },
+    "packages": {
+      "title": "I nostri pacchetti",
+      "description": "Approfitta delle nostre tariffe fisse per i tuoi viaggi frequenti verso aeroporti, stazioni e destinazioni turistiche.",
+      "airports": "Trasferimenti aeroportuali (CDG, Orly, Beauvais)",
+      "stations": "Trasferimenti stazioni TGV",
+      "champagne": "Tour alla scoperta della Champagne",
+      "viewAll": "Vedi tutti i pacchetti"
+    },
+    "availability": {
+      "title": "Noleggio a ore",
+      "description": "Hai bisogno di un autista per diverse ore? Scegli il nostro servizio di noleggio a ore, ideale per i tuoi eventi o spostamenti su misura.",
+      "services": {
+        "business": "Appuntamenti di lavoro",
+        "events": "Matrimoni ed eventi",
+        "evenings": "Serate e uscite",
+        "tours": "Visite turistiche"
+      },
+      "customRequest": "Richiesta personalizzata"
+    }
+  },
+  "auth": {
+    "loginTitle": "Accedi al tuo account",
+    "signupTitle": "Crea il tuo account",
+    "googleLogin": "Continua con Google",
+    "or": "o",
+    "fullName": "Nome completo",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Conferma password",
+    "login": "Accedi",
+    "signup": "Crea il mio account",
+    "loading": "Caricamento...",
+    "noAccount": "Non hai un account?",
+    "hasAccount": "Hai già un account?",
+    "signupLink": "Registrati",
+    "loginLink": "Accedi",
+    "forgotPassword": "Password dimenticata?",
+    "terms": "Continuando, accetti i nostri",
+    "termsLink": "Termini e Condizioni",
+    "and": "e la nostra",
+    "privacyLink": "Informativa sulla Privacy",
+    "verifyEmail": "Controlla la tua email",
+    "resendEmail": "Rinvia email di conferma",
+    "errors": {
+      "enterName": "Per favore inserisci il tuo nome completo.",
+      "passwordMismatch": "Le password non corrispondono.",
+      "passwordTooShort": "La password deve essere di almeno 6 caratteri.",
+      "emailInUse": "Questo indirizzo email è già in uso. Prova ad accedere.",
+      "invalidEmail": "Indirizzo email non valido.",
+      "weakPassword": "Password troppo debole. Usa almeno 6 caratteri.",
+      "networkError": "Errore di rete. Controlla la tua connessione internet.",
+      "userNotFound": "Nessun account trovato con questo indirizzo email.",
+      "wrongPassword": "Password errata.",
+      "invalidCredential": "Email o password errata.",
+      "tooManyAttempts": "Troppi tentativi. Per favore riprova tra qualche minuto.",
+      "emailNotVerified": "Il tuo indirizzo email non è ancora stato verificato. Per favore controlla la tua casella di posta e clicca sul link di conferma.",
+      "popupClosed": "Accesso annullato.",
+      "unauthorizedDomain": "Questo dominio non è autorizzato per l'accesso con Google.",
+      "googleError": "Errore di accesso con Google. Per favore riprova.",
+      "genericError": "Errore di accesso. Per favore riprova."
+    },
+    "success": {
+      "accountCreated": "Account creato con successo! Un'email di conferma è stata inviata a",
+      "clickLink": "Per favore clicca sul link per attivare il tuo account.",
+      "emailFailed": "L'invio dell'email di verifica non è riuscito. Puoi richiederne una nuova dalla pagina di accesso.",
+      "emailResent": "Una nuova email di conferma è stata inviata a",
+      "alreadyVerified": "La tua email è già verificata. Puoi accedere."
+    }
+  },
+  "account": {
+    "title": "Le mie corse",
+    "noBookings": "Nessuna corsa prenotata ancora.",
+    "sections": {
+      "pending": "Corse in attesa",
+      "pendingMessage": "In attesa di validazione dell'autista...",
+      "accepted": "Corse accettate - Pagamento richiesto",
+      "confirmed": "Corse confermate",
+      "cancelled": "Corse annullate",
+      "refused": "Corse rifiutate"
+    },
+    "pay": "Paga",
+    "invoice": "Fattura PDF",
+    "loading": "Caricamento...",
+    "loadingUser": "Caricamento utente...",
+    "cancel": {
+      "button": "Annulla",
+      "confirmMessage": "Sei sicuro di voler annullare questa corsa?",
+      "confirmWithFees": "Attenzione: l'annullamento meno di 5 ore prima della corsa comporta una penale del 30%. Confermare l'annullamento?",
+      "reasonPrompt": "Motivo dell'annullamento (opzionale):",
+      "success": "Corsa annullata con successo.",
+      "partialRefund": "Penale di annullamento: {{fee}}€. Rimborso: {{refund}}€.",
+      "fullRefund": "Rimborso totale: {{refund}}€.",
+      "error": "Errore durante l'annullamento."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard Autista",
+    "sections": {
+      "pending": "Corse in attesa",
+      "accepted": "Corse accettate (in attesa di pagamento)",
+      "confirmed": "Corse confermate (pagate)",
+      "cancelled": "Corse annullate",
+      "refused": "Corse rifiutate"
+    },
+    "noRides": "Nessuna corsa.",
+    "trip": "Percorso",
+    "date": "Data",
+    "passengers": "Passeggeri",
+    "distance": "Distanza",
+    "price": "Prezzo",
+    "client": "Cliente",
+    "phone": "Telefono",
+    "package": "Pacchetto",
+    "roundTrip": "Andata e ritorno",
+    "accept": "Accetta",
+    "refuse": "Rifiuta",
+    "orderForm": "Modulo d'ordine",
+    "confirmAccept": "Accettare questa corsa? Un'email con il link di pagamento sarà inviata al cliente.",
+    "confirmRefuse": "Rifiutare questa corsa? Il cliente sarà informato via email.",
+    "refuseReason": "Motivo del rifiuto (opzionale):",
+    "defaultRefuseReason": "Autista non disponibile",
+    "alerts": {
+      "mustLogin": "Devi essere connesso.",
+      "acceptSuccess": "Corsa accettata! Il cliente ha ricevuto un'email con il link di pagamento.",
+      "refuseSuccess": "Corsa rifiutata. Il cliente è stato notificato via email.",
+      "error": "Errore:",
+      "acceptError": "Impossibile accettare la corsa",
+      "refuseError": "Impossibile rifiutare la corsa",
+      "serverError": "Errore del server durante l'accettazione."
+    },
+    "loading": "Caricamento corse...",
+    "cancel": {
+      "button": "Annulla",
+      "confirmMessage": "Annullare questa corsa? Il cliente sarà rimborsato integralmente.",
+      "reasonPrompt": "Motivo dell'annullamento:",
+      "success": "Corsa annullata. Il cliente è stato avvisato e rimborsato.",
+      "error": "Errore durante l'annullamento."
+    }
+  },
+  "payment": {
+    "success": {
+      "title": "Pagamento riuscito!",
+      "message": "La tua prenotazione è confermata."
+    },
+    "cancel": {
+      "title": "Pagamento annullato",
+      "message": "Il tuo pagamento è stato annullato."
+    }
+  },
+  "common": {
+    "km": "km",
+    "euro": "€",
+    "dateUnknown": "Data sconosciuta",
+    "notSpecified": "Non specificato",
+    "error": "Errore",
+    "success": "Successo",
+    "loading": "Caricamento...",
+    "passengers": "passeggeri",
+    "roundTrip": "Andata e ritorno"
+  },
+  "forfaits": {
+    "title": "I nostri",
+    "titleHighlight": "Pacchetti",
+    "subtitle": "Approfitta delle nostre tariffe preferenziali per i tuoi viaggi da Reims. Prezzi fissi, senza sorprese!",
+    "savings": "Fino al 20% di risparmio rispetto alla tariffa standard",
+    "destinations": "destinazioni",
+    "book": "Prenota",
+    "perTrip": "/ corsa",
+    "categories": {
+      "airports": "Aeroporti",
+      "champagne": "Strada dello Champagne",
+      "tourism": "Siti Turistici",
+      "stations": "Stazioni TGV",
+      "cities": "Città Vicine"
+    },
+    "destinations": {
+      "cdg": "Aeroporto Parigi CDG",
+      "orly": "Aeroporto Parigi Orly",
+      "beauvais": "Aeroporto Beauvais-Tillé",
+      "vatry": "Aeroporto Châlons-Vatry",
+      "epernay": "Épernay - Avenue de Champagne",
+      "hautvillers": "Hautvillers - Villaggio di Dom Pérignon",
+      "ay": "Aÿ-Champagne",
+      "verzenay": "Verzenay - Faro e Museo della Vigna",
+      "bouzy": "Bouzy - Colline dello Champagne",
+      "cathedrale": "Cattedrale Notre-Dame di Reims",
+      "palaisTau": "Palazzo del Tau",
+      "basilique": "Basilica di Saint-Remi",
+      "fortPompelle": "Fort de la Pompelle",
+      "cavesPommery": "Cantine Pommery",
+      "cavesTaittinger": "Cantine Taittinger",
+      "gareReims": "Stazione di Reims Centro",
+      "gareChampagne": "Stazione Champagne-Ardenne TGV",
+      "gareParisEst": "Stazione Parigi Est",
+      "paris": "Parigi Centro",
+      "chalons": "Châlons-en-Champagne",
+      "charleville": "Charleville-Mézières",
+      "troyes": "Troyes",
+      "laon": "Laon"
+    },
+    "features": {
+      "premiumVehicle": "Veicolo Premium",
+      "premiumVehicleDesc": "Mercedes Classe E o equivalente, climatizzato, WiFi a bordo",
+      "passengers": "Fino a 4 passeggeri",
+      "passengersDesc": "Tariffa fissa, nessun supplemento per passeggero",
+      "freeCancellation": "Cancellazione gratuita",
+      "freeCancellationDesc": "Cancellazione gratuita fino a 24 ore prima della partenza"
+    },
+    "modal": {
+      "title": "Prenota questo pacchetto",
+      "pickupAddress": "Indirizzo di partenza *",
+      "pickupHint": "Inizia a digitare per vedere i suggerimenti",
+      "phone": "Numero di telefono *",
+      "phoneHint": "Per contattarti prima del ritiro",
+      "date": "Data *",
+      "time": "Ora di ritiro *",
+      "passengers": "Numero di passeggeri",
+      "roundTrip": "Andata e ritorno",
+      "comment": "Commento (opzionale)",
+      "commentPlaceholder": "Numero di volo, istruzioni speciali...",
+      "tripSummary": "Riepilogo del viaggio",
+      "yourAddress": "Il tuo indirizzo",
+      "returnToAddress": "+ Ritorno al tuo indirizzo",
+      "totalPrice": "Prezzo totale",
+      "trips": "corse",
+      "cancel": "Annulla",
+      "confirm": "Conferma",
+      "sending": "Invio..."
+    },
+    "alerts": {
+      "loginRequired": "Per favore accedi per prenotare un pacchetto.",
+      "enterAddress": "Per favore inserisci il tuo indirizzo di partenza.",
+      "enterPhone": "Per favore inserisci il tuo numero di telefono.",
+      "success": "La tua prenotazione del pacchetto è stata inviata! Riceverai una conferma dopo la validazione da parte del nostro autista.",
+      "error": "Errore durante la prenotazione. Per favore riprova."
+    }
+  }
+}

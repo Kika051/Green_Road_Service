@@ -1,0 +1,411 @@
+{
+  "nav": {
+    "book": "Book",
+    "packages": "Packages",
+    "availability": "Chauffeur Service",
+    "services": "Services",
+    "dashboard": "Dashboard",
+    "account": "Your Account",
+    "logout": "Logout",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Your premium chauffeur in Reims and Champagne",
+    "subtitle": "Airports, train stations, weddings, events – book your electric chauffeur with peace of mind.",
+    "cta": "Book now",
+    "features": {
+      "vehicle": "High-end electric vehicle",
+      "local": "Local driver based in Reims",
+      "punctuality": "Punctuality & comfort guaranteed"
+    }
+  },
+  "booking": {
+    "title": "Book a ride",
+    "pickup": "Pickup address",
+    "dropoff": "Destination address",
+    "datetime": "Date and time",
+    "phone": "Phone number",
+    "phoneRequired": "Phone number *",
+    "phoneHint": "To contact you before pickup",
+    "passengers": "passenger",
+    "passengers_plural": "passengers",
+    "carSeat": "Child seat",
+    "carSeatYes": "Child seat: Yes",
+    "carSeatNo": "Child seat: No",
+    "seat": "seat",
+    "seats": "seats",
+    "calculate": "Calculate price",
+    "calculating": "Calculating...",
+    "estimatedPrice": "Estimated price",
+    "estimatedDistance": "Estimated distance",
+    "confirmQuestion": "Would you like to book this ride?",
+    "yes": "Yes",
+    "no": "No",
+    "successMessage": "Your request has been sent.",
+    "errors": {
+      "fillAddresses": "Please fill in the addresses.",
+      "enterPhone": "Please enter your phone number.",
+      "priceError": "Error calculating the price.",
+      "serverError": "Server error.",
+      "saveError": "Error saving the booking."
+    }
+  },
+  "packages": {
+    "title": "Our",
+    "titleHighlight": "Packages",
+    "subtitle": "Enjoy our preferential rates for your trips from Reims. Fixed prices, no surprises!",
+    "savings": "Up to 20% savings compared to standard rate",
+    "destinations": "destinations",
+    "book": "Book",
+    "perTrip": "/ trip",
+    "categories": {
+      "airports": "Airports",
+      "champagne": "Champagne Route",
+      "tourism": "Tourist Sites",
+      "stations": "TGV Stations",
+      "cities": "Nearby Cities"
+    },
+    "features": {
+      "premiumVehicle": "Premium Vehicle",
+      "premiumVehicleDesc": "Mercedes E-Class or equivalent, air-conditioned, WiFi on board",
+      "passengers": "Up to 4 passengers",
+      "passengersDesc": "Flat rate, no extra charge per passenger",
+      "freeCancellation": "Free cancellation",
+      "freeCancellationDesc": "Free cancellation up to 24 hours before departure"
+    },
+    "modal": {
+      "title": "Book this package",
+      "pickupAddress": "Pickup address *",
+      "pickupHint": "Start typing to see suggestions",
+      "phone": "Phone number *",
+      "phoneHint": "To contact you before pickup",
+      "date": "Date *",
+      "time": "Pickup time *",
+      "passengers": "Number of passengers",
+      "roundTrip": "Round trip",
+      "comment": "Comment (optional)",
+      "commentPlaceholder": "Flight number, special instructions...",
+      "tripSummary": "Trip summary",
+      "yourAddress": "Your address",
+      "returnToAddress": "+ Return to your address",
+      "totalPrice": "Total price",
+      "trips": "trips",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "sending": "Sending..."
+    },
+    "alerts": {
+      "loginRequired": "Please log in to book a package.",
+      "enterAddress": "Please enter your pickup address.",
+      "enterPhone": "Please enter your phone number.",
+      "success": "Your package booking has been sent! You will receive a confirmation after validation by our driver.",
+      "error": "Error during booking. Please try again."
+    }
+  },
+  "availability": {
+    "title": "Chauffeur",
+    "titleHighlight": "Service",
+    "subtitle": "Need a driver for several hours? Wedding, corporate event, tourist day... We adapt to your needs.",
+    "form": {
+      "pickupAddress": "Pickup address *",
+      "pickupPlaceholder": "Enter the departure address...",
+      "date": "Date *",
+      "time": "Time *",
+      "duration": "Service duration *",
+      "durationPlaceholder": "Select a duration",
+      "durations": {
+        "2h": "2 hours",
+        "3h": "3 hours",
+        "4h": "4 hours (half-day)",
+        "6h": "6 hours",
+        "8h": "8 hours (full day)",
+        "10h": "10 hours",
+        "12h": "12 hours",
+        "custom": "Other (specify in details)"
+      },
+      "contactInfo": "Your contact information",
+      "fullName": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email *",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone *",
+      "phonePlaceholder": "+33 6 XX XX XX XX",
+      "details": "Additional details (optional)",
+      "detailsPlaceholder": "Type of event, number of passengers, planned itinerary, specific needs...",
+      "submit": "Send my request",
+      "sending": "Sending...",
+      "consent": "By submitting this form, you agree to be contacted by our team to establish a personalized quote."
+    },
+    "success": {
+      "title": "Request sent successfully!",
+      "message": "We have received your chauffeur service request. Our team will contact you as soon as possible to provide a personalized quote.",
+      "newRequest": "Make a new request"
+    },
+    "pricing": {
+      "title": "Pricing information",
+      "hourly": "Hourly rate: from €50/hour",
+      "halfDay": "Half-day (4h): from €180",
+      "fullDay": "Full day (8h): from €350",
+      "mileage": "Mileage included depending on the package chosen",
+      "custom": "Custom quote for special events"
+    },
+    "errors": {
+      "generic": "An error occurred. Please try again.",
+      "connection": "Connection error. Please try again."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "A premium chauffeur service in Reims and Champagne",
+      "bookTransfer": "Book a transfer",
+      "availability": "Hourly hire"
+    },
+    "intro": {
+      "title": "Your private chauffeur in Champagne",
+      "description": "GreenRoad Services offers a high-end transportation service with a private chauffeur. Whether for business trips, airport transfers or outings in Champagne, we guarantee comfort, punctuality and discretion."
+    },
+    "vehicle": {
+      "title": "Our vehicle",
+      "exterior": "Exterior",
+      "interior": "Interior",
+      "backseats": "Back seats"
+    },
+    "packages": {
+      "title": "Our packages",
+      "description": "Enjoy our fixed rates for your frequent trips to airports, train stations and tourist destinations.",
+      "airports": "Airport transfers (CDG, Orly, Beauvais)",
+      "stations": "TGV train station transfers",
+      "champagne": "Champagne discovery tours",
+      "viewAll": "View all packages"
+    },
+    "availability": {
+      "title": "Hourly hire",
+      "description": "Need a chauffeur for several hours? Choose our hourly hire service, ideal for your events or custom trips.",
+      "services": {
+        "business": "Business meetings",
+        "events": "Weddings and events",
+        "evenings": "Evenings and outings",
+        "tours": "Sightseeing tours"
+      },
+      "customRequest": "Custom request"
+    }
+  },
+  "auth": {
+    "loginTitle": "Log in to your account",
+    "signupTitle": "Create your account",
+    "googleLogin": "Continue with Google",
+    "or": "or",
+    "fullName": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "login": "Log in",
+    "signup": "Create my account",
+    "loading": "Loading...",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signupLink": "Sign up",
+    "loginLink": "Log in",
+    "forgotPassword": "Forgot password?",
+    "terms": "By continuing, you accept our",
+    "termsLink": "Terms and Conditions",
+    "and": "and our",
+    "privacyLink": "Privacy Policy",
+    "verifyEmail": "Check your email",
+    "resendEmail": "Resend confirmation email",
+    "errors": {
+      "enterName": "Please enter your full name.",
+      "passwordMismatch": "Passwords do not match.",
+      "passwordTooShort": "Password must be at least 6 characters.",
+      "emailInUse": "This email address is already in use. Try logging in.",
+      "invalidEmail": "Invalid email address.",
+      "weakPassword": "Password too weak. Use at least 6 characters.",
+      "networkError": "Network error. Check your internet connection.",
+      "userNotFound": "No account found with this email address.",
+      "wrongPassword": "Incorrect password.",
+      "invalidCredential": "Incorrect email or password.",
+      "tooManyAttempts": "Too many attempts. Please try again in a few minutes.",
+      "emailNotVerified": "Your email address has not been verified yet. Please check your inbox and click the confirmation link.",
+      "popupClosed": "Login cancelled.",
+      "unauthorizedDomain": "This domain is not authorized for Google login.",
+      "googleError": "Error logging in with Google. Please try again.",
+      "genericError": "Login error. Please try again."
+    },
+    "success": {
+      "accountCreated": "Account created successfully! A confirmation email has been sent to",
+      "clickLink": "Please click the link to activate your account.",
+      "emailFailed": "Sending the verification email failed. You can request a new one from the login page.",
+      "emailResent": "A new confirmation email has been sent to",
+      "alreadyVerified": "Your email is already verified. You can log in."
+    }
+  },
+  "account": {
+    "title": "My rides",
+    "noBookings": "No rides booked yet.",
+    "sections": {
+      "pending": "Pending rides",
+      "pendingMessage": "Waiting for driver validation...",
+      "accepted": "Accepted rides - Payment required",
+      "confirmed": "Confirmed rides",
+      "cancelled": "Cancelled rides",
+      "refused": "Refused rides"
+    },
+    "pay": "Pay",
+    "invoice": "Invoice PDF",
+    "loading": "Loading...",
+    "loadingUser": "Loading user...",
+    "cancel": {
+      "button": "Cancel",
+      "confirmMessage": "Are you sure you want to cancel this ride?",
+      "confirmWithFees": "Warning: cancellation less than 5 hours before the ride incurs a 30% fee. Confirm cancellation?",
+      "reasonPrompt": "Reason for cancellation (optional):",
+      "success": "Ride cancelled successfully.",
+      "partialRefund": "Cancellation fee: {{fee}}€. Refund: {{refund}}€.",
+      "fullRefund": "Full refund: {{refund}}€.",
+      "error": "Error during cancellation."
+    }
+  },
+  "dashboard": {
+    "title": "Driver Dashboard",
+    "sections": {
+      "pending": "Pending rides",
+      "accepted": "Accepted rides (awaiting payment)",
+      "confirmed": "Confirmed rides (paid)",
+      "cancelled": "Cancelled rides",
+      "refused": "Refused rides"
+    },
+    "noRides": "No rides.",
+    "trip": "Trip",
+    "date": "Date",
+    "passengers": "Passengers",
+    "distance": "Distance",
+    "price": "Price",
+    "client": "Client",
+    "phone": "Phone",
+    "package": "Package",
+    "roundTrip": "Round trip",
+    "accept": "Accept",
+    "refuse": "Refuse",
+    "orderForm": "Order form",
+    "confirmAccept": "Accept this ride? An email with the payment link will be sent to the client.",
+    "confirmRefuse": "Refuse this ride? An email will be sent to the client to inform them.",
+    "refuseReason": "Reason for refusal (optional):",
+    "defaultRefuseReason": "Driver unavailable",
+    "alerts": {
+      "mustLogin": "You must be logged in.",
+      "acceptSuccess": "Ride accepted! The client has received an email with the payment link.",
+      "refuseSuccess": "Ride refused. The client has been notified by email.",
+      "error": "Error:",
+      "acceptError": "Unable to accept the ride",
+      "refuseError": "Unable to refuse the ride",
+      "serverError": "Server error during acceptance."
+    },
+    "loading": "Loading rides...",
+    "cancel": {
+      "button": "Cancel",
+      "confirmMessage": "Cancel this ride? The client will be fully refunded.",
+      "reasonPrompt": "Reason for cancellation:",
+      "success": "Ride cancelled. The client has been notified and refunded.",
+      "error": "Error during cancellation."
+    }
+  },
+  "payment": {
+    "success": {
+      "title": "Payment successful!",
+      "message": "Your booking is confirmed."
+    },
+    "cancel": {
+      "title": "Payment cancelled",
+      "message": "Your payment has been cancelled."
+    }
+  },
+  "common": {
+    "km": "km",
+    "euro": "€",
+    "dateUnknown": "Date unknown",
+    "notSpecified": "Not specified",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "passengers": "passengers",
+    "roundTrip": "Round trip"
+  },
+  "forfaits": {
+    "title": "Our",
+    "titleHighlight": "Packages",
+    "subtitle": "Enjoy our preferential rates for your trips from Reims. Fixed prices, no surprises!",
+    "savings": "Up to 20% savings compared to standard rate",
+    "destinations": "destinations",
+    "book": "Book",
+    "perTrip": "/ trip",
+    "categories": {
+      "airports": "Airports",
+      "champagne": "Champagne Route",
+      "tourism": "Tourist Sites",
+      "stations": "TGV Stations",
+      "cities": "Nearby Cities"
+    },
+    "destinations": {
+      "cdg": "Paris CDG Airport",
+      "orly": "Paris Orly Airport",
+      "beauvais": "Beauvais-Tillé Airport",
+      "vatry": "Châlons-Vatry Airport",
+      "epernay": "Épernay - Avenue de Champagne",
+      "hautvillers": "Hautvillers - Dom Pérignon Village",
+      "ay": "Aÿ-Champagne",
+      "verzenay": "Verzenay - Lighthouse & Vine Museum",
+      "bouzy": "Bouzy - Champagne Hills",
+      "cathedrale": "Reims Notre-Dame Cathedral",
+      "palaisTau": "Tau Palace",
+      "basilique": "Saint-Remi Basilica",
+      "fortPompelle": "Fort de la Pompelle",
+      "cavesPommery": "Pommery Cellars",
+      "cavesTaittinger": "Taittinger Cellars",
+      "gareReims": "Reims Central Station",
+      "gareChampagne": "Champagne-Ardenne TGV Station",
+      "gareParisEst": "Paris Est Station",
+      "paris": "Paris City Center",
+      "chalons": "Châlons-en-Champagne",
+      "charleville": "Charleville-Mézières",
+      "troyes": "Troyes",
+      "laon": "Laon"
+    },
+    "features": {
+      "premiumVehicle": "Premium Vehicle",
+      "premiumVehicleDesc": "Mercedes E-Class or equivalent, air-conditioned, WiFi on board",
+      "passengers": "Up to 4 passengers",
+      "passengersDesc": "Flat rate, no extra charge per passenger",
+      "freeCancellation": "Free cancellation",
+      "freeCancellationDesc": "Free cancellation up to 24 hours before departure"
+    },
+    "modal": {
+      "title": "Book this package",
+      "pickupAddress": "Pickup address *",
+      "pickupHint": "Start typing to see suggestions",
+      "phone": "Phone number *",
+      "phoneHint": "To contact you before pickup",
+      "date": "Date *",
+      "time": "Pickup time *",
+      "passengers": "Number of passengers",
+      "roundTrip": "Round trip",
+      "comment": "Comment (optional)",
+      "commentPlaceholder": "Flight number, special instructions...",
+      "tripSummary": "Trip summary",
+      "yourAddress": "Your address",
+      "returnToAddress": "+ Return to your address",
+      "totalPrice": "Total price",
+      "trips": "trips",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "sending": "Sending..."
+    },
+    "alerts": {
+      "loginRequired": "Please log in to book a package.",
+      "enterAddress": "Please enter your pickup address.",
+      "enterPhone": "Please enter your phone number.",
+      "success": "Your package booking has been sent! You will receive a confirmation after validation by our driver.",
+      "error": "Error during booking. Please try again."
+    }
+  }
+}

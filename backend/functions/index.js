@@ -21,6 +21,7 @@ const { createBookingRequest } = require("./handlers/createBookingRequest");
 const { validateBooking } = require("./handlers/validateBooking");
 const { requestAvailability } = require("./handlers/requestAvailability");
 const { refuseBooking } = require("./handlers/refuseBooking");
+const { cancelBooking } = require("./handlers/cancelBooking");
 
 // ✅ Définition des routes express
 app.post("/createQuote", createQuote);
@@ -31,6 +32,7 @@ app.post("/generateInvoice", generateInvoice);
 app.post("/validateBooking", validateBooking);
 app.post("/requestAvailability", requestAvailability);
 app.post("/refuseBooking", refuseBooking);
+app.post("/cancelBooking", cancelBooking);
 
 // ✅ Export des fonctions Firebase
 exports.api = functions.https.onRequest(app);

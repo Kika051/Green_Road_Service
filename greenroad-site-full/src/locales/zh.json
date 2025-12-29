@@ -1,0 +1,411 @@
+{
+  "nav": {
+    "book": "预约",
+    "packages": "套餐",
+    "availability": "包车服务",
+    "services": "服务",
+    "dashboard": "控制台",
+    "account": "您的账户",
+    "logout": "退出",
+    "login": "登录"
+  },
+  "home": {
+    "title": "兰斯和香槟区的高端私人司机",
+    "subtitle": "机场、火车站、婚礼、活动 – 安心预约您的电动专车司机。",
+    "cta": "立即预约",
+    "features": {
+      "vehicle": "高端电动车辆",
+      "local": "兰斯本地司机",
+      "punctuality": "准时与舒适保证"
+    }
+  },
+  "booking": {
+    "title": "预约行程",
+    "pickup": "上车地址",
+    "dropoff": "目的地地址",
+    "datetime": "日期和时间",
+    "phone": "电话号码",
+    "phoneRequired": "电话号码 *",
+    "phoneHint": "用于接车前联系您",
+    "passengers": "乘客",
+    "passengers_plural": "乘客",
+    "carSeat": "儿童座椅",
+    "carSeatYes": "儿童座椅：是",
+    "carSeatNo": "儿童座椅：否",
+    "seat": "座椅",
+    "seats": "座椅",
+    "calculate": "计算价格",
+    "calculating": "计算中...",
+    "estimatedPrice": "预估价格",
+    "estimatedDistance": "预估距离",
+    "confirmQuestion": "您想预约这次行程吗？",
+    "yes": "是",
+    "no": "否",
+    "successMessage": "您的请求已发送。",
+    "errors": {
+      "fillAddresses": "请填写地址。",
+      "enterPhone": "请输入您的电话号码。",
+      "priceError": "计算价格时出错。",
+      "serverError": "服务器错误。",
+      "saveError": "保存预约时出错。"
+    }
+  },
+  "packages": {
+    "title": "我们的",
+    "titleHighlight": "套餐",
+    "subtitle": "享受从兰斯出发的优惠价格。固定价格，无额外费用！",
+    "savings": "相比标准价格最高节省20%",
+    "destinations": "个目的地",
+    "book": "预约",
+    "perTrip": "/ 行程",
+    "categories": {
+      "airports": "机场",
+      "champagne": "香槟之路",
+      "tourism": "旅游景点",
+      "stations": "高铁站",
+      "cities": "周边城市"
+    },
+    "features": {
+      "premiumVehicle": "高端车辆",
+      "premiumVehicleDesc": "奔驰E级或同等级，空调，车载WiFi",
+      "passengers": "最多4名乘客",
+      "passengersDesc": "固定价格，无额外乘客费用",
+      "freeCancellation": "免费取消",
+      "freeCancellationDesc": "出发前24小时内免费取消"
+    },
+    "modal": {
+      "title": "预约此套餐",
+      "pickupAddress": "上车地址 *",
+      "pickupHint": "开始输入查看建议",
+      "phone": "电话号码 *",
+      "phoneHint": "用于接车前联系您",
+      "date": "日期 *",
+      "time": "接车时间 *",
+      "passengers": "乘客人数",
+      "roundTrip": "往返",
+      "comment": "备注（可选）",
+      "commentPlaceholder": "航班号、特殊说明...",
+      "tripSummary": "行程摘要",
+      "yourAddress": "您的地址",
+      "returnToAddress": "+ 返回您的地址",
+      "totalPrice": "总价",
+      "trips": "行程",
+      "cancel": "取消",
+      "confirm": "确认",
+      "sending": "发送中..."
+    },
+    "alerts": {
+      "loginRequired": "请登录以预约套餐。",
+      "enterAddress": "请输入您的上车地址。",
+      "enterPhone": "请输入您的电话号码。",
+      "success": "您的套餐预约已发送！司机确认后您将收到确认信息。",
+      "error": "预约时出错。请重试。"
+    }
+  },
+  "availability": {
+    "title": "包车",
+    "titleHighlight": "服务",
+    "subtitle": "需要司机服务几个小时？婚礼、企业活动、旅游观光...我们满足您的需求。",
+    "form": {
+      "pickupAddress": "上车地址 *",
+      "pickupPlaceholder": "输入出发地址...",
+      "date": "日期 *",
+      "time": "时间 *",
+      "duration": "服务时长 *",
+      "durationPlaceholder": "选择时长",
+      "durations": {
+        "2h": "2小时",
+        "3h": "3小时",
+        "4h": "4小时（半天）",
+        "6h": "6小时",
+        "8h": "8小时（全天）",
+        "10h": "10小时",
+        "12h": "12小时",
+        "custom": "其他（在详情中说明）"
+      },
+      "contactInfo": "您的联系方式",
+      "fullName": "全名",
+      "namePlaceholder": "您的姓名",
+      "email": "电子邮箱 *",
+      "emailPlaceholder": "your@email.com",
+      "phone": "电话 *",
+      "phonePlaceholder": "+86 XXX XXXX XXXX",
+      "details": "附加详情（可选）",
+      "detailsPlaceholder": "活动类型、乘客人数、计划路线、特殊需求...",
+      "submit": "发送我的请求",
+      "sending": "发送中...",
+      "consent": "提交此表单即表示您同意我们的团队与您联系以提供个性化报价。"
+    },
+    "success": {
+      "title": "请求发送成功！",
+      "message": "我们已收到您的包车服务请求。我们的团队将尽快与您联系，提供个性化报价。",
+      "newRequest": "提交新请求"
+    },
+    "pricing": {
+      "title": "价格信息",
+      "hourly": "小时费率：50€/小时起",
+      "halfDay": "半天（4小时）：180€起",
+      "fullDay": "全天（8小时）：350€起",
+      "mileage": "里程包含在所选套餐内",
+      "custom": "特殊活动定制报价"
+    },
+    "errors": {
+      "generic": "发生错误。请重试。",
+      "connection": "连接错误。请重试。"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "我们的服务",
+      "subtitle": "兰斯和香槟区的高端专车服务",
+      "bookTransfer": "预订接送",
+      "availability": "按小时租车"
+    },
+    "intro": {
+      "title": "您在香槟区的私人司机",
+      "description": "GreenRoad Services 为您提供高端私人司机运输服务。无论是商务出行、机场接送还是香槟区游览，我们保证舒适、准时和私密。"
+    },
+    "vehicle": {
+      "title": "我们的车辆",
+      "exterior": "外观",
+      "interior": "内饰",
+      "backseats": "后座"
+    },
+    "packages": {
+      "title": "我们的套餐",
+      "description": "享受我们前往机场、火车站和旅游目的地的固定价格优惠。",
+      "airports": "机场接送（CDG、Orly、Beauvais）",
+      "stations": "TGV高铁站接送",
+      "champagne": "香槟区探索之旅",
+      "viewAll": "查看所有套餐"
+    },
+    "availability": {
+      "title": "按小时租车",
+      "description": "需要司机服务数小时？选择我们的按小时租车服务，非常适合您的活动或定制行程。",
+      "services": {
+        "business": "商务会议",
+        "events": "婚礼和活动",
+        "evenings": "夜间外出",
+        "tours": "观光旅游"
+      },
+      "customRequest": "定制请求"
+    }
+  },
+  "auth": {
+    "loginTitle": "登录您的账户",
+    "signupTitle": "创建账户",
+    "googleLogin": "使用Google继续",
+    "or": "或",
+    "fullName": "全名",
+    "email": "电子邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "login": "登录",
+    "signup": "创建我的账户",
+    "loading": "加载中...",
+    "noAccount": "还没有账户？",
+    "hasAccount": "已有账户？",
+    "signupLink": "注册",
+    "loginLink": "登录",
+    "forgotPassword": "忘记密码？",
+    "terms": "继续即表示您接受我们的",
+    "termsLink": "条款和条件",
+    "and": "和",
+    "privacyLink": "隐私政策",
+    "verifyEmail": "检查您的邮箱",
+    "resendEmail": "重新发送确认邮件",
+    "errors": {
+      "enterName": "请输入您的全名。",
+      "passwordMismatch": "密码不匹配。",
+      "passwordTooShort": "密码必须至少6个字符。",
+      "emailInUse": "此电子邮箱已被使用。请尝试登录。",
+      "invalidEmail": "电子邮箱地址无效。",
+      "weakPassword": "密码太弱。请使用至少6个字符。",
+      "networkError": "网络错误。请检查您的网络连接。",
+      "userNotFound": "未找到使用此电子邮箱的账户。",
+      "wrongPassword": "密码错误。",
+      "invalidCredential": "电子邮箱或密码错误。",
+      "tooManyAttempts": "尝试次数过多。请几分钟后重试。",
+      "emailNotVerified": "您的电子邮箱尚未验证。请检查您的收件箱并点击确认链接。",
+      "popupClosed": "登录已取消。",
+      "unauthorizedDomain": "此域名未获授权使用Google登录。",
+      "googleError": "使用Google登录时出错。请重试。",
+      "genericError": "登录错误。请重试。"
+    },
+    "success": {
+      "accountCreated": "账户创建成功！确认邮件已发送至",
+      "clickLink": "请点击链接激活您的账户。",
+      "emailFailed": "发送验证邮件失败。您可以从登录页面请求新邮件。",
+      "emailResent": "新的确认邮件已发送至",
+      "alreadyVerified": "您的邮箱已验证。您可以登录。"
+    }
+  },
+  "account": {
+    "title": "我的行程",
+    "noBookings": "暂无预约行程。",
+    "sections": {
+      "pending": "待处理行程",
+      "pendingMessage": "等待司机确认...",
+      "accepted": "已接受行程 - 需要付款",
+      "confirmed": "已确认行程",
+      "cancelled": "已取消行程",
+      "refused": "已拒绝行程"
+    },
+    "pay": "支付",
+    "invoice": "发票PDF",
+    "loading": "加载中...",
+    "loadingUser": "加载用户...",
+    "cancel": {
+      "button": "取消",
+      "confirmMessage": "您确定要取消这次行程吗？",
+      "confirmWithFees": "注意：行程前5小时内取消将收取30%的取消费。确认取消？",
+      "reasonPrompt": "取消原因（可选）：",
+      "success": "行程取消成功。",
+      "partialRefund": "取消费：{{fee}}€。退款：{{refund}}€。",
+      "fullRefund": "全额退款：{{refund}}€。",
+      "error": "取消时出错。"
+    }
+  },
+  "dashboard": {
+    "title": "司机控制台",
+    "sections": {
+      "pending": "待处理行程",
+      "accepted": "已接受行程（等待付款）",
+      "confirmed": "已确认行程（已付款）",
+      "cancelled": "已取消行程",
+      "refused": "已拒绝行程"
+    },
+    "noRides": "无行程。",
+    "trip": "行程",
+    "date": "日期",
+    "passengers": "乘客",
+    "distance": "距离",
+    "price": "价格",
+    "client": "客户",
+    "phone": "电话",
+    "package": "套餐",
+    "roundTrip": "往返",
+    "accept": "接受",
+    "refuse": "拒绝",
+    "orderForm": "订单表",
+    "confirmAccept": "接受此行程？包含付款链接的邮件将发送给客户。",
+    "confirmRefuse": "拒绝此行程？客户将收到邮件通知。",
+    "refuseReason": "拒绝原因（可选）：",
+    "defaultRefuseReason": "司机不可用",
+    "alerts": {
+      "mustLogin": "您必须登录。",
+      "acceptSuccess": "行程已接受！客户已收到包含付款链接的邮件。",
+      "refuseSuccess": "行程已拒绝。客户已收到邮件通知。",
+      "error": "错误：",
+      "acceptError": "无法接受行程",
+      "refuseError": "无法拒绝行程",
+      "serverError": "接受时服务器错误。"
+    },
+    "loading": "加载行程...",
+    "cancel": {
+      "button": "取消",
+      "confirmMessage": "取消这次行程？客户将获得全额退款。",
+      "reasonPrompt": "取消原因：",
+      "success": "行程已取消。客户已收到通知并获得退款。",
+      "error": "取消时出错。"
+    }
+  },
+  "payment": {
+    "success": {
+      "title": "支付成功！",
+      "message": "您的预约已确认。"
+    },
+    "cancel": {
+      "title": "支付已取消",
+      "message": "您的支付已取消。"
+    }
+  },
+  "common": {
+    "km": "公里",
+    "euro": "€",
+    "dateUnknown": "日期未知",
+    "notSpecified": "未指定",
+    "error": "错误",
+    "success": "成功",
+    "loading": "加载中...",
+    "passengers": "乘客",
+    "roundTrip": "往返"
+  },
+  "forfaits": {
+    "title": "我们的",
+    "titleHighlight": "套餐",
+    "subtitle": "享受从兰斯出发的优惠价格。固定价格，无额外费用！",
+    "savings": "相比标准价格最高节省20%",
+    "destinations": "个目的地",
+    "book": "预约",
+    "perTrip": "/ 行程",
+    "categories": {
+      "airports": "机场",
+      "champagne": "香槟之路",
+      "tourism": "旅游景点",
+      "stations": "高铁站",
+      "cities": "周边城市"
+    },
+    "destinations": {
+      "cdg": "巴黎戴高乐机场",
+      "orly": "巴黎奥利机场",
+      "beauvais": "博韦-蒂耶机场",
+      "vatry": "香槟-瓦特里机场",
+      "epernay": "埃佩尔奈 - 香槟大道",
+      "hautvillers": "奥维莱尔 - 唐培里侬村",
+      "ay": "阿伊-香槟",
+      "verzenay": "韦尔泽奈 - 灯塔和葡萄园博物馆",
+      "bouzy": "布齐 - 香槟山丘",
+      "cathedrale": "兰斯圣母大教堂",
+      "palaisTau": "托宫",
+      "basilique": "圣雷米大教堂",
+      "fortPompelle": "蓬佩勒堡",
+      "cavesPommery": "波美里酒窖",
+      "cavesTaittinger": "泰廷爵酒窖",
+      "gareReims": "兰斯中央火车站",
+      "gareChampagne": "香槟-阿登TGV站",
+      "gareParisEst": "巴黎东站",
+      "paris": "巴黎市中心",
+      "chalons": "香槟沙隆",
+      "charleville": "沙勒维尔-梅济耶尔",
+      "troyes": "特鲁瓦",
+      "laon": "拉昂"
+    },
+    "features": {
+      "premiumVehicle": "高端车辆",
+      "premiumVehicleDesc": "奔驰E级或同等级，空调，车载WiFi",
+      "passengers": "最多4名乘客",
+      "passengersDesc": "固定价格，无额外乘客费用",
+      "freeCancellation": "免费取消",
+      "freeCancellationDesc": "出发前24小时内免费取消"
+    },
+    "modal": {
+      "title": "预约此套餐",
+      "pickupAddress": "上车地址 *",
+      "pickupHint": "开始输入查看建议",
+      "phone": "电话号码 *",
+      "phoneHint": "用于接车前联系您",
+      "date": "日期 *",
+      "time": "接车时间 *",
+      "passengers": "乘客人数",
+      "roundTrip": "往返",
+      "comment": "备注（可选）",
+      "commentPlaceholder": "航班号、特殊说明...",
+      "tripSummary": "行程摘要",
+      "yourAddress": "您的地址",
+      "returnToAddress": "+ 返回您的地址",
+      "totalPrice": "总价",
+      "trips": "行程",
+      "cancel": "取消",
+      "confirm": "确认",
+      "sending": "发送中..."
+    },
+    "alerts": {
+      "loginRequired": "请登录以预约套餐。",
+      "enterAddress": "请输入您的上车地址。",
+      "enterPhone": "请输入您的电话号码。",
+      "success": "您的套餐预约已发送！司机确认后您将收到确认信息。",
+      "error": "预约时出错。请重试。"
+    }
+  }
+}
