@@ -163,7 +163,7 @@
     },
     "intro": {
       "title": "Il tuo autista privato in Champagne",
-      "description": "GreenRoad Services offre un servizio di trasporto di alta gamma con autista privato. Che si tratti di viaggi d'affari, trasferimenti aeroportuali o escursioni in Champagne, garantiamo comfort, puntualità e discrezione."
+      "description": "Green Road Services offre un servizio di trasporto di alta gamma con autista privato. Che si tratti di viaggi d'affari, trasferimenti aeroportuali o escursioni in Champagne, garantiamo comfort, puntualità e discrezione."
     },
     "vehicle": {
       "title": "Il nostro veicolo",
@@ -196,7 +196,7 @@
     "signupTitle": "Crea il tuo account",
     "googleLogin": "Continua con Google",
     "or": "o",
-    "fullName": "Nome completo",
+    "fullName": "Nome e cognome",
     "email": "Email",
     "password": "Password",
     "confirmPassword": "Conferma password",
@@ -208,16 +208,17 @@
     "signupLink": "Registrati",
     "loginLink": "Accedi",
     "forgotPassword": "Password dimenticata?",
-    "terms": "Continuando, accetti i nostri",
-    "termsLink": "Termini e Condizioni",
-    "and": "e la nostra",
-    "privacyLink": "Informativa sulla Privacy",
-    "verifyEmail": "Controlla la tua email",
-    "resendEmail": "Rinvia email di conferma",
+    "resendEmail": "Reinvia email di conferma",
+    "resetPassword": {
+      "description": "Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la password.",
+      "submit": "Invia link",
+      "success": "Email inviata con successo!",
+      "checkEmail": "Controlla la tua casella di posta e clicca sul link per reimpostare la password."
+    },
     "errors": {
-      "enterName": "Per favore inserisci il tuo nome completo.",
+      "enterName": "Inserisci il tuo nome e cognome.",
       "passwordMismatch": "Le password non corrispondono.",
-      "passwordTooShort": "La password deve essere di almeno 6 caratteri.",
+      "passwordTooShort": "La password deve contenere almeno 6 caratteri.",
       "emailInUse": "Questo indirizzo email è già in uso. Prova ad accedere.",
       "invalidEmail": "Indirizzo email non valido.",
       "weakPassword": "Password troppo debole. Usa almeno 6 caratteri.",
@@ -225,18 +226,17 @@
       "userNotFound": "Nessun account trovato con questo indirizzo email.",
       "wrongPassword": "Password errata.",
       "invalidCredential": "Email o password errata.",
-      "tooManyAttempts": "Troppi tentativi. Per favore riprova tra qualche minuto.",
-      "emailNotVerified": "Il tuo indirizzo email non è ancora stato verificato. Per favore controlla la tua casella di posta e clicca sul link di conferma.",
+      "tooManyAttempts": "Troppi tentativi. Riprova tra qualche minuto.",
+      "emailNotVerified": "Il tuo indirizzo email non è ancora stato verificato. Controlla la tua casella di posta e clicca sul link di conferma.",
       "popupClosed": "Accesso annullato.",
       "unauthorizedDomain": "Questo dominio non è autorizzato per l'accesso con Google.",
-      "googleError": "Errore di accesso con Google. Per favore riprova.",
-      "genericError": "Errore di accesso. Per favore riprova."
+      "googleError": "Errore durante l'accesso con Google. Riprova.",
+      "genericError": "Errore di accesso. Riprova."
     },
     "success": {
-      "accountCreated": "Account creato con successo! Un'email di conferma è stata inviata a",
-      "clickLink": "Per favore clicca sul link per attivare il tuo account.",
-      "emailFailed": "L'invio dell'email di verifica non è riuscito. Puoi richiederne una nuova dalla pagina di accesso.",
-      "emailResent": "Una nuova email di conferma è stata inviata a",
+      "accountCreated": "Account creato con successo! Un'email di conferma è stata inviata a:",
+      "clickLink": "Clicca sul link nell'email per attivare il tuo account.",
+      "emailResent": "Una nuova email di conferma è stata inviata a:",
       "alreadyVerified": "La tua email è già verificata. Puoi accedere."
     }
   },
@@ -336,7 +336,7 @@
     "titleHighlight": "Pacchetti",
     "subtitle": "Approfitta delle nostre tariffe preferenziali per i tuoi viaggi da Reims. Prezzi fissi, senza sorprese!",
     "savings": "Fino al 20% di risparmio rispetto alla tariffa standard",
-    "destinations": "destinazioni",
+    "destinationsLabel": "destinazioni",
     "book": "Prenota",
     "perTrip": "/ corsa",
     "categories": {
@@ -407,5 +407,176 @@
       "success": "La tua prenotazione del pacchetto è stata inviata! Riceverai una conferma dopo la validazione da parte del nostro autista.",
       "error": "Errore durante la prenotazione. Per favore riprova."
     }
+  },
+  "footer": {
+    "description": "Servizio di autista privato VTC premium a Reims e in Champagne. Trasferimenti aeroportuali, stazioni, eventi.",
+    "navigation": "Navigazione",
+    "legal": "Informazioni legali",
+    "contact": "Contatto",
+    "legalNotice": "Note legali",
+    "cgu": "Condizioni d'uso",
+    "cgv": "Condizioni di vendita",
+    "privacy": "Politica sulla privacy",
+    "rights": "Tutti i diritti riservati."
+  },
+  "legal": {
+    "lastUpdate": "Ultimo aggiornamento",
+    "mentions": {
+      "title": "Note Legali",
+      "editor": {
+        "title": "Editore del sito",
+        "name": "Ragione sociale",
+        "status": "Forma giuridica",
+        "siret": "SIRET",
+        "address": "Indirizzo",
+        "phone": "Telefono",
+        "email": "Email",
+        "director": "Direttore della pubblicazione"
+      },
+      "host": {
+        "title": "Hosting",
+        "name": "Nome",
+        "address": "Indirizzo",
+        "website": "Sito web"
+      },
+      "activity": {
+        "title": "Attività",
+        "description": "Green Road Services è un servizio di trasporto persone con autista privato (VTC) che opera principalmente nella regione di Reims e della Champagne.",
+        "license": "Licenza VTC",
+        "insurance": "Assicurazione RC Professionale"
+      },
+      "intellectual": {
+        "title": "Proprietà intellettuale",
+        "description": "Tutti i contenuti di questo sito (testi, immagini, loghi, ecc.) sono protetti dal diritto d'autore. Qualsiasi riproduzione, anche parziale, è vietata senza previa autorizzazione."
+      },
+      "contact": {
+        "title": "Contatto"
+      }
+    },
+    "cgu": {
+      "title": "Condizioni Generali d'Uso",
+      "article1": {
+        "title": "Oggetto",
+        "content": "Le presenti Condizioni Generali d'Uso regolano l'accesso e l'utilizzo del sito web Green Road Services. Accedendo a questo sito, accetti senza riserve le presenti Condizioni."
+      },
+      "article2": {
+        "title": "Accesso al sito",
+        "content": "Il sito è accessibile gratuitamente a qualsiasi utente con accesso a Internet. Green Road Services non può essere ritenuto responsabile di eventuali interruzioni del servizio."
+      },
+      "article3": {
+        "title": "Creazione account",
+        "content": "Per effettuare una prenotazione, l'utente deve creare un account fornendo informazioni accurate e aggiornate. L'utente è responsabile della riservatezza delle proprie credenziali di accesso."
+      },
+      "article4": {
+        "title": "Utilizzo del servizio",
+        "content": "L'utente si impegna a utilizzare il sito in conformità con la legge e le presenti Condizioni d'Uso. Qualsiasi uso abusivo o fraudolento è severamente vietato."
+      },
+      "article5": {
+        "title": "Proprietà intellettuale",
+        "content": "Tutti gli elementi del sito (testi, immagini, loghi, ecc.) sono di proprietà esclusiva di Green Road Services e sono protetti dalle leggi sulla proprietà intellettuale."
+      },
+      "article6": {
+        "title": "Responsabilità",
+        "content": "Green Road Services si impegna a fornire informazioni accurate ma non garantisce l'assenza di errori. L'utilizzo del sito avviene sotto la responsabilità dell'utente."
+      },
+      "article7": {
+        "title": "Modifica delle Condizioni",
+        "content": "Green Road Services si riserva il diritto di modificare le presenti Condizioni d'Uso in qualsiasi momento. Le modifiche entrano in vigore al momento della pubblicazione sul sito."
+      }
+    },
+    "cgv": {
+      "title": "Condizioni Generali di Vendita",
+      "article1": {
+        "title": "Oggetto",
+        "content": "Le presenti Condizioni Generali di Vendita regolano i servizi di trasporto persone con autista privato offerti da Green Road Services."
+      },
+      "article2": {
+        "title": "Servizi offerti",
+        "content": "Green Road Services offre servizi di trasporto VTC tra cui: trasferimenti aeroportuali e ferroviari, noleggio a ore, tour in Champagne e trasporti per eventi (matrimoni, seminari, ecc.)."
+      },
+      "article3": {
+        "title": "Prenotazione",
+        "content": "Le prenotazioni vengono effettuate tramite il sito web o telefonicamente. Sono confermate dopo la convalida del nostro team e la ricezione del pagamento. Un'email di conferma viene inviata al cliente."
+      },
+      "article4": {
+        "title": "Tariffe",
+        "content": "Le tariffe sono indicate in euro IVA inclusa. Includono veicolo, autista, carburante e pedaggi. Eventuali tempi di attesa aggiuntivi oltre i 15 minuti saranno addebitati a 1€/minuto."
+      },
+      "article5": {
+        "title": "Pagamento",
+        "content": "Il pagamento avviene online con carta di credito tramite la nostra piattaforma sicura Stripe. Il pagamento completo è richiesto per confermare la prenotazione."
+      },
+      "article6": {
+        "title": "Cancellazione e rimborso",
+        "content": "Le condizioni di cancellazione sono le seguenti:",
+        "rule1": "Cancellazione oltre 5 ore prima della corsa: rimborso totale",
+        "rule2": "Cancellazione meno di 5 ore prima della corsa: commissione del 30%, rimborso del 70%",
+        "rule3": "Cancellazione da parte dell'autista: rimborso totale"
+      },
+      "article7": {
+        "title": "Responsabilità",
+        "content": "Green Road Services è assicurato per il trasporto di persone. La nostra responsabilità è limitata ai danni diretti comprovati. Non siamo responsabili per ritardi dovuti a circostanze eccezionali (traffico, condizioni meteorologiche, ecc.)."
+      },
+      "article8": {
+        "title": "Bagagli",
+        "content": "Il trasporto di bagagli standard è incluso nel prezzo. Per bagagli ingombranti o trasporto di attrezzature specifiche, contattaci in anticipo."
+      },
+      "article9": {
+        "title": "Reclami",
+        "content": "Qualsiasi reclamo deve essere inviato via email a contact.greenroadservices@gmail.com entro 7 giorni dal servizio. Ci impegniamo a rispondere entro 48 ore."
+      },
+      "article10": {
+        "title": "Legge applicabile",
+        "content": "Le presenti Condizioni Generali di Vendita sono soggette alla legge francese. In caso di controversia, si cercherà una soluzione amichevole prima di qualsiasi azione legale. In mancanza, saranno competenti i tribunali di Reims."
+      }
+    },
+    "privacy": {
+      "title": "Politica sulla Privacy",
+      "intro": {
+        "title": "Introduzione",
+        "content": "Green Road Services si impegna a proteggere la privacy dei suoi utenti. Questa politica spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformità con il GDPR."
+      },
+      "data": {
+        "title": "Dati raccolti",
+        "content": "Raccogliamo i seguenti dati quando utilizzi i nostri servizi:",
+        "item1": "Nome e cognome",
+        "item2": "Indirizzo email",
+        "item3": "Numero di telefono",
+        "item4": "Indirizzi di ritiro e destinazione",
+        "item5": "Informazioni di pagamento (elaborate da Stripe)"
+      },
+      "usage": {
+        "title": "Utilizzo dei dati",
+        "content": "I tuoi dati vengono utilizzati per:",
+        "item1": "Gestire le tue prenotazioni e fornire il servizio di trasporto",
+        "item2": "Contattarti riguardo alle tue corse",
+        "item3": "Elaborare i pagamenti",
+        "item4": "Migliorare i nostri servizi"
+      },
+      "security": {
+        "title": "Sicurezza dei dati",
+        "content": "Implementiamo misure di sicurezza tecniche e organizzative per proteggere i tuoi dati da accessi non autorizzati, modifiche o distruzione. I dati di pagamento sono elaborati in modo sicuro da Stripe."
+      },
+      "rights": {
+        "title": "I tuoi diritti",
+        "content": "Ai sensi del GDPR, hai i seguenti diritti:",
+        "item1": "Diritto di accesso ai tuoi dati",
+        "item2": "Diritto di rettifica",
+        "item3": "Diritto alla cancellazione",
+        "item4": "Diritto alla portabilità dei dati",
+        "item5": "Diritto di opposizione"
+      },
+      "cookies": {
+        "title": "Cookie",
+        "content": "Il nostro sito utilizza cookie tecnici necessari per il funzionamento del servizio. Questi cookie non raccolgono dati personali per scopi pubblicitari."
+      },
+      "contact": {
+        "title": "Contatto",
+        "content": "Per esercitare i tuoi diritti o per qualsiasi domanda sui tuoi dati personali, contattaci a:"
+      }
+    },
+    "acceptCgv": "Accetto le",
+    "cgvLink": "Condizioni Generali di Vendita",
+    "cgvRequired": "Devi accettare le CGV per continuare."
   }
 }

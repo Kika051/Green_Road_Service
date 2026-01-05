@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar, Footer } from "./components";
 import {
   Home,
   Booking,
@@ -12,8 +12,12 @@ import {
   DriverDashboard,
   PaymentSuccess,
   PaymentCancel,
-} from './pages';
-import ProtectedDashboardRoute from './routes/ProtectedDashboardRoute';
+  MentionsLegales,
+  CGU,
+  CGV,
+  PolitiqueConfidentialite,
+} from "./pages";
+import ProtectedDashboardRoute from "./routes/ProtectedDashboardRoute";
 
 const App = () => (
   <Router>
@@ -32,6 +36,13 @@ const App = () => (
           <Route path="/account" element={<MyAccount />} />
           <Route path="/success" element={<PaymentSuccess />} />
           <Route path="/cancel" element={<PaymentCancel />} />
+          <Route path="/cgu" element={<CGU />} />
+          <Route path="/cgv" element={<CGV />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route
+            path="/politique-confidentialite"
+            element={<PolitiqueConfidentialite />}
+          />
           <Route
             path="/dashboard"
             element={
@@ -43,6 +54,7 @@ const App = () => (
         </Routes>
       </main>
     </div>
+    <Footer />
   </Router>
 );
 

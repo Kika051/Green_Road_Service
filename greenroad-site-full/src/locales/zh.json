@@ -163,7 +163,7 @@
     },
     "intro": {
       "title": "您在香槟区的私人司机",
-      "description": "GreenRoad Services 为您提供高端私人司机运输服务。无论是商务出行、机场接送还是香槟区游览，我们保证舒适、准时和私密。"
+      "description": "Green Road Services 为您提供高端私人司机运输服务。无论是商务出行、机场接送还是香槟区游览，我们保证舒适、准时和私密。"
     },
     "vehicle": {
       "title": "我们的车辆",
@@ -193,51 +193,51 @@
   },
   "auth": {
     "loginTitle": "登录您的账户",
-    "signupTitle": "创建账户",
+    "signupTitle": "创建您的账户",
     "googleLogin": "使用Google继续",
     "or": "或",
-    "fullName": "全名",
-    "email": "电子邮箱",
+    "fullName": "姓名",
+    "email": "电子邮件",
     "password": "密码",
     "confirmPassword": "确认密码",
     "login": "登录",
-    "signup": "创建我的账户",
+    "signup": "创建账户",
     "loading": "加载中...",
     "noAccount": "还没有账户？",
     "hasAccount": "已有账户？",
     "signupLink": "注册",
     "loginLink": "登录",
     "forgotPassword": "忘记密码？",
-    "terms": "继续即表示您接受我们的",
-    "termsLink": "条款和条件",
-    "and": "和",
-    "privacyLink": "隐私政策",
-    "verifyEmail": "检查您的邮箱",
     "resendEmail": "重新发送确认邮件",
+    "resetPassword": {
+      "description": "输入您的电子邮件地址，我们将向您发送重置密码的链接。",
+      "submit": "发送链接",
+      "success": "邮件发送成功！",
+      "checkEmail": "请检查您的收件箱并点击链接重置密码。"
+    },
     "errors": {
-      "enterName": "请输入您的全名。",
+      "enterName": "请输入您的姓名。",
       "passwordMismatch": "密码不匹配。",
       "passwordTooShort": "密码必须至少6个字符。",
-      "emailInUse": "此电子邮箱已被使用。请尝试登录。",
-      "invalidEmail": "电子邮箱地址无效。",
+      "emailInUse": "此电子邮件地址已被使用。请尝试登录。",
+      "invalidEmail": "无效的电子邮件地址。",
       "weakPassword": "密码太弱。请使用至少6个字符。",
       "networkError": "网络错误。请检查您的网络连接。",
-      "userNotFound": "未找到使用此电子邮箱的账户。",
+      "userNotFound": "未找到使用此电子邮件地址的账户。",
       "wrongPassword": "密码错误。",
-      "invalidCredential": "电子邮箱或密码错误。",
-      "tooManyAttempts": "尝试次数过多。请几分钟后重试。",
-      "emailNotVerified": "您的电子邮箱尚未验证。请检查您的收件箱并点击确认链接。",
+      "invalidCredential": "电子邮件或密码错误。",
+      "tooManyAttempts": "尝试次数过多。请几分钟后再试。",
+      "emailNotVerified": "您的电子邮件地址尚未验证。请检查您的收件箱并点击确认链接。",
       "popupClosed": "登录已取消。",
-      "unauthorizedDomain": "此域名未获授权使用Google登录。",
+      "unauthorizedDomain": "此域名未被授权使用Google登录。",
       "googleError": "使用Google登录时出错。请重试。",
       "genericError": "登录错误。请重试。"
     },
     "success": {
-      "accountCreated": "账户创建成功！确认邮件已发送至",
-      "clickLink": "请点击链接激活您的账户。",
-      "emailFailed": "发送验证邮件失败。您可以从登录页面请求新邮件。",
-      "emailResent": "新的确认邮件已发送至",
-      "alreadyVerified": "您的邮箱已验证。您可以登录。"
+      "accountCreated": "账户创建成功！确认邮件已发送至：",
+      "clickLink": "请点击邮件中的链接激活您的账户。",
+      "emailResent": "新的确认邮件已发送至：",
+      "alreadyVerified": "您的邮箱已验证。您可以登录了。"
     }
   },
   "account": {
@@ -336,7 +336,7 @@
     "titleHighlight": "套餐",
     "subtitle": "享受从兰斯出发的优惠价格。固定价格，无额外费用！",
     "savings": "相比标准价格最高节省20%",
-    "destinations": "个目的地",
+    "destinationsLabel": "个目的地",
     "book": "预约",
     "perTrip": "/ 行程",
     "categories": {
@@ -407,5 +407,176 @@
       "success": "您的套餐预约已发送！司机确认后您将收到确认信息。",
       "error": "预约时出错。请重试。"
     }
+  },
+  "footer": {
+    "description": "兰斯和香槟区高端私人司机服务。机场接送、火车站、活动。",
+    "navigation": "导航",
+    "legal": "法律信息",
+    "contact": "联系方式",
+    "legalNotice": "法律声明",
+    "cgu": "使用条款",
+    "cgv": "销售条款",
+    "privacy": "隐私政策",
+    "rights": "版权所有。"
+  },
+  "legal": {
+    "lastUpdate": "最后更新",
+    "mentions": {
+      "title": "法律声明",
+      "editor": {
+        "title": "网站发布者",
+        "name": "公司名称",
+        "status": "法律形式",
+        "siret": "SIRET",
+        "address": "地址",
+        "phone": "电话",
+        "email": "电子邮件",
+        "director": "出版负责人"
+      },
+      "host": {
+        "title": "托管服务商",
+        "name": "名称",
+        "address": "地址",
+        "website": "网站"
+      },
+      "activity": {
+        "title": "业务活动",
+        "description": "Green Road Services是一家私人司机运输服务公司（VTC），主要在兰斯和香槟地区运营。",
+        "license": "VTC许可证",
+        "insurance": "专业责任保险"
+      },
+      "intellectual": {
+        "title": "知识产权",
+        "description": "本网站的所有内容（文字、图片、标志等）均受版权保护。未经事先授权，禁止任何形式的复制。"
+      },
+      "contact": {
+        "title": "联系方式"
+      }
+    },
+    "cgu": {
+      "title": "使用条款",
+      "article1": {
+        "title": "目的",
+        "content": "本使用条款规定了GreenRoad Services网站的访问和使用。访问本网站即表示您无保留地接受本条款。"
+      },
+      "article2": {
+        "title": "网站访问",
+        "content": "任何有互联网接入的用户均可免费访问本网站。GreenRoad Services不对任何服务中断承担责任。"
+      },
+      "article3": {
+        "title": "账户创建",
+        "content": "要进行预订，用户必须创建账户并提供准确、最新的信息。用户对其登录凭证的保密性负责。"
+      },
+      "article4": {
+        "title": "服务使用",
+        "content": "用户承诺按照法律和本使用条款使用网站。严禁任何滥用或欺诈行为。"
+      },
+      "article5": {
+        "title": "知识产权",
+        "content": "网站的所有元素（文字、图片、标志等）均为GreenRoad Services的专有财产，受知识产权法保护。"
+      },
+      "article6": {
+        "title": "责任",
+        "content": "Green Road Services努力提供准确信息，但不保证没有错误。用户使用网站需自行承担风险。"
+      },
+      "article7": {
+        "title": "条款修改",
+        "content": "Green Road Services保留随时修改本使用条款的权利。修改自在网站上发布之日起生效。"
+      }
+    },
+    "cgv": {
+      "title": "销售条款",
+      "article1": {
+        "title": "目的",
+        "content": "本销售条款规定了GreenRoad Services提供的私人司机运输服务。"
+      },
+      "article2": {
+        "title": "提供的服务",
+        "content": "Green Road Services提供VTC运输服务，包括：机场和火车站接送、按小时租车、香槟区旅游、活动运输（婚礼、研讨会等）。"
+      },
+      "article3": {
+        "title": "预订",
+        "content": "预订通过网站或电话进行。经我们团队确认并收到付款后即确认预订。确认邮件将发送给客户。"
+      },
+      "article4": {
+        "title": "价格",
+        "content": "价格以欧元含税显示。包括车辆、司机、燃油和过路费。超过15分钟的额外等待时间将按1欧元/分钟收费。"
+      },
+      "article5": {
+        "title": "付款",
+        "content": "通过我们的安全Stripe平台在线信用卡付款。确认预订需要全额付款。"
+      },
+      "article6": {
+        "title": "取消和退款",
+        "content": "取消条件如下：",
+        "rule1": "行程前5小时以上取消：全额退款",
+        "rule2": "行程前5小时内取消：收取30%费用，退款70%",
+        "rule3": "司机取消：全额退款"
+      },
+      "article7": {
+        "title": "责任",
+        "content": "Green Road Services已为乘客运输投保。我们的责任仅限于已证实的直接损失。我们不对因特殊情况（交通拥堵、天气条件等）造成的延误负责。"
+      },
+      "article8": {
+        "title": "行李",
+        "content": "标准行李运输包含在价格内。如有大件行李或特殊设备运输，请提前联系我们。"
+      },
+      "article9": {
+        "title": "投诉",
+        "content": "任何投诉必须在服务后7天内通过电子邮件发送至contact.greenroadservices@gmail.com。我们承诺在48小时内回复。"
+      },
+      "article10": {
+        "title": "适用法律",
+        "content": "本销售条款受法国法律管辖。如有争议，将在采取任何法律行动之前寻求友好解决方案。如无法达成，兰斯法院将具有管辖权。"
+      }
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "intro": {
+        "title": "简介",
+        "content": "Green Road Services承诺保护用户隐私。本政策说明我们如何根据GDPR收集、使用和保护您的个人数据。"
+      },
+      "data": {
+        "title": "收集的数据",
+        "content": "我们在您使用服务时收集以下数据：",
+        "item1": "姓名",
+        "item2": "电子邮件地址",
+        "item3": "电话号码",
+        "item4": "上车和目的地地址",
+        "item5": "付款信息（由Stripe处理）"
+      },
+      "usage": {
+        "title": "数据使用",
+        "content": "您的数据用于：",
+        "item1": "管理您的预订并提供运输服务",
+        "item2": "就您的行程与您联系",
+        "item3": "处理付款",
+        "item4": "改善我们的服务"
+      },
+      "security": {
+        "title": "数据安全",
+        "content": "我们实施技术和组织安全措施，保护您的数据免受未经授权的访问、修改或销毁。付款数据由Stripe安全处理。"
+      },
+      "rights": {
+        "title": "您的权利",
+        "content": "根据GDPR，您享有以下权利：",
+        "item1": "访问您数据的权利",
+        "item2": "更正权",
+        "item3": "删除权",
+        "item4": "数据可携带权",
+        "item5": "反对权"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "我们的网站使用服务运行所必需的技术性cookies。这些cookies不会为广告目的收集个人数据。"
+      },
+      "contact": {
+        "title": "联系方式",
+        "content": "如需行使您的权利或有任何关于个人数据的问题，请联系我们："
+      }
+    },
+    "acceptCgv": "我接受",
+    "cgvLink": "销售条款",
+    "cgvRequired": "您必须接受销售条款才能继续。"
   }
 }

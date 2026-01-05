@@ -1,0 +1,582 @@
+{
+  "nav": {
+    "book": "Reservar",
+    "packages": "Paquetes",
+    "availability": "Servicio de chófer",
+    "services": "Servicios",
+    "dashboard": "Panel de control",
+    "account": "Tu cuenta",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión"
+  },
+  "home": {
+    "title": "Tu chófer premium en Reims y Champaña",
+    "subtitle": "Aeropuertos, estaciones, bodas, eventos – reserva tu chófer eléctrico con total tranquilidad.",
+    "cta": "Reservar ahora",
+    "features": {
+      "vehicle": "Vehículo eléctrico de alta gama",
+      "local": "Chófer local con sede en Reims",
+      "punctuality": "Puntualidad y confort garantizados"
+    }
+  },
+  "booking": {
+    "title": "Reservar un viaje",
+    "pickup": "Dirección de recogida",
+    "dropoff": "Dirección de destino",
+    "datetime": "Fecha y hora",
+    "phone": "Número de teléfono",
+    "phoneRequired": "Número de teléfono *",
+    "phoneHint": "Para contactarte antes de la recogida",
+    "passengers": "pasajero",
+    "passengers_plural": "pasajeros",
+    "carSeat": "Silla para niños",
+    "carSeatYes": "Silla para niños: Sí",
+    "carSeatNo": "Silla para niños: No",
+    "seat": "asiento",
+    "seats": "asientos",
+    "calculate": "Calcular precio",
+    "calculating": "Calculando...",
+    "estimatedPrice": "Precio estimado",
+    "estimatedDistance": "Distancia estimada",
+    "confirmQuestion": "¿Deseas reservar este viaje?",
+    "yes": "Sí",
+    "no": "No",
+    "successMessage": "Tu solicitud ha sido enviada.",
+    "errors": {
+      "fillAddresses": "Por favor, completa las direcciones.",
+      "enterPhone": "Por favor, ingresa tu número de teléfono.",
+      "priceError": "Error al calcular el precio.",
+      "serverError": "Error del servidor.",
+      "saveError": "Error al guardar la reserva."
+    }
+  },
+  "forfaits": {
+    "title": "Nuestros",
+    "titleHighlight": "Paquetes",
+    "subtitle": "Disfruta de nuestras tarifas preferenciales para tus viajes desde Reims. ¡Precios fijos, sin sorpresas!",
+    "savings": "Hasta un 20% de ahorro respecto a la tarifa estándar",
+    "destinationsLabel": "destinos",
+    "book": "Reservar",
+    "perTrip": "/ viaje",
+    "categories": {
+      "airports": "Aeropuertos",
+      "champagne": "Ruta del Champaña",
+      "tourism": "Sitios Turísticos",
+      "stations": "Estaciones TGV",
+      "cities": "Ciudades Cercanas"
+    },
+    "destinations": {
+      "cdg": "Aeropuerto París CDG",
+      "orly": "Aeropuerto París Orly",
+      "beauvais": "Aeropuerto Beauvais-Tillé",
+      "vatry": "Aeropuerto Châlons-Vatry",
+      "epernay": "Épernay - Avenida del Champaña",
+      "hautvillers": "Hautvillers - Pueblo de Dom Pérignon",
+      "ay": "Aÿ-Champagne",
+      "verzenay": "Verzenay - Faro y Museo del Viñedo",
+      "bouzy": "Bouzy - Colinas del Champaña",
+      "cathedrale": "Catedral de Notre-Dame de Reims",
+      "palaisTau": "Palacio del Tau",
+      "basilique": "Basílica de Saint-Remi",
+      "fortPompelle": "Fuerte de la Pompelle",
+      "cavesPommery": "Bodegas Pommery",
+      "cavesTaittinger": "Bodegas Taittinger",
+      "gareReims": "Estación de Reims Centro",
+      "gareChampagne": "Estación Champagne-Ardenne TGV",
+      "gareParisEst": "Estación París Este",
+      "paris": "París Centro",
+      "chalons": "Châlons-en-Champagne",
+      "charleville": "Charleville-Mézières",
+      "troyes": "Troyes",
+      "laon": "Laon"
+    },
+    "features": {
+      "premiumVehicle": "Vehículo Premium",
+      "premiumVehicleDesc": "Mercedes Clase E o equivalente, climatizado, WiFi a bordo",
+      "passengers": "Hasta 4 pasajeros",
+      "passengersDesc": "Precio fijo, sin cargo adicional por pasajero",
+      "freeCancellation": "Cancelación gratuita",
+      "freeCancellationDesc": "Cancelación gratuita hasta 24 horas antes de la salida"
+    },
+    "modal": {
+      "title": "Reservar este paquete",
+      "pickupAddress": "Dirección de recogida *",
+      "pickupHint": "Empieza a escribir para ver sugerencias",
+      "phone": "Número de teléfono *",
+      "phoneHint": "Para contactarte antes de la recogida",
+      "date": "Fecha *",
+      "time": "Hora de recogida *",
+      "passengers": "Número de pasajeros",
+      "roundTrip": "Ida y vuelta",
+      "comment": "Comentario (opcional)",
+      "commentPlaceholder": "Número de vuelo, instrucciones especiales...",
+      "tripSummary": "Resumen del viaje",
+      "yourAddress": "Tu dirección",
+      "returnToAddress": "+ Regreso a tu dirección",
+      "totalPrice": "Precio total",
+      "trips": "viajes",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "sending": "Enviando..."
+    },
+    "alerts": {
+      "loginRequired": "Por favor, inicia sesión para reservar un paquete.",
+      "enterAddress": "Por favor, ingresa tu dirección de recogida.",
+      "enterPhone": "Por favor, ingresa tu número de teléfono.",
+      "success": "¡Tu reserva de paquete ha sido enviada! Recibirás una confirmación después de la validación por nuestro chófer.",
+      "error": "Error durante la reserva. Por favor, inténtalo de nuevo."
+    }
+  },
+  "packages": {
+    "title": "Nuestros",
+    "titleHighlight": "Paquetes",
+    "subtitle": "Disfruta de nuestras tarifas preferenciales para tus viajes desde Reims. ¡Precios fijos, sin sorpresas!",
+    "savings": "Hasta un 20% de ahorro respecto a la tarifa estándar",
+    "destinations": "destinos",
+    "book": "Reservar",
+    "perTrip": "/ viaje",
+    "categories": {
+      "airports": "Aeropuertos",
+      "champagne": "Ruta del Champaña",
+      "tourism": "Sitios Turísticos",
+      "stations": "Estaciones TGV",
+      "cities": "Ciudades Cercanas"
+    },
+    "features": {
+      "premiumVehicle": "Vehículo Premium",
+      "premiumVehicleDesc": "Mercedes Clase E o equivalente, climatizado, WiFi a bordo",
+      "passengers": "Hasta 4 pasajeros",
+      "passengersDesc": "Precio fijo, sin cargo adicional por pasajero",
+      "freeCancellation": "Cancelación gratuita",
+      "freeCancellationDesc": "Cancelación gratuita hasta 24 horas antes de la salida"
+    },
+    "modal": {
+      "title": "Reservar este paquete",
+      "pickupAddress": "Dirección de recogida *",
+      "pickupHint": "Empieza a escribir para ver sugerencias",
+      "phone": "Número de teléfono *",
+      "phoneHint": "Para contactarte antes de la recogida",
+      "date": "Fecha *",
+      "time": "Hora de recogida *",
+      "passengers": "Número de pasajeros",
+      "roundTrip": "Ida y vuelta",
+      "comment": "Comentario (opcional)",
+      "commentPlaceholder": "Número de vuelo, instrucciones especiales...",
+      "tripSummary": "Resumen del viaje",
+      "yourAddress": "Tu dirección",
+      "returnToAddress": "+ Regreso a tu dirección",
+      "totalPrice": "Precio total",
+      "trips": "viajes",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "sending": "Enviando..."
+    },
+    "alerts": {
+      "loginRequired": "Por favor, inicia sesión para reservar un paquete.",
+      "enterAddress": "Por favor, ingresa tu dirección de recogida.",
+      "enterPhone": "Por favor, ingresa tu número de teléfono.",
+      "success": "¡Tu reserva de paquete ha sido enviada! Recibirás una confirmación después de la validación por nuestro chófer.",
+      "error": "Error durante la reserva. Por favor, inténtalo de nuevo."
+    }
+  },
+  "availability": {
+    "title": "Servicio de",
+    "titleHighlight": "Chófer",
+    "subtitle": "¿Necesitas un chófer por varias horas? Boda, evento corporativo, día turístico... Nos adaptamos a tus necesidades.",
+    "form": {
+      "pickupAddress": "Dirección de recogida *",
+      "pickupPlaceholder": "Ingresa la dirección de salida...",
+      "date": "Fecha *",
+      "time": "Hora *",
+      "duration": "Duración del servicio *",
+      "durationPlaceholder": "Selecciona una duración",
+      "durations": {
+        "2h": "2 horas",
+        "3h": "3 horas",
+        "4h": "4 horas (medio día)",
+        "6h": "6 horas",
+        "8h": "8 horas (día completo)",
+        "10h": "10 horas",
+        "12h": "12 horas",
+        "custom": "Otro (especificar en detalles)"
+      },
+      "contactInfo": "Tu información de contacto",
+      "fullName": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email *",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono *",
+      "phonePlaceholder": "+34 XXX XXX XXX",
+      "details": "Detalles adicionales (opcional)",
+      "detailsPlaceholder": "Tipo de evento, número de pasajeros, itinerario previsto, necesidades específicas...",
+      "submit": "Enviar mi solicitud",
+      "sending": "Enviando...",
+      "consent": "Al enviar este formulario, aceptas ser contactado por nuestro equipo para elaborar un presupuesto personalizado."
+    },
+    "success": {
+      "title": "¡Solicitud enviada con éxito!",
+      "message": "Hemos recibido tu solicitud de servicio de chófer. Nuestro equipo se pondrá en contacto contigo lo antes posible para proporcionarte un presupuesto personalizado.",
+      "newRequest": "Hacer una nueva solicitud"
+    },
+    "pricing": {
+      "title": "Información de precios",
+      "hourly": "Tarifa por hora: desde 50€/hora",
+      "halfDay": "Medio día (4h): desde 180€",
+      "fullDay": "Día completo (8h): desde 350€",
+      "mileage": "Kilometraje incluido según el paquete elegido",
+      "custom": "Presupuesto personalizado para eventos especiales"
+    },
+    "errors": {
+      "generic": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+      "connection": "Error de conexión. Por favor, inténtalo de nuevo."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Un servicio VTC premium en Reims y Champaña",
+      "bookTransfer": "Reservar un traslado",
+      "availability": "Alquiler por horas"
+    },
+    "intro": {
+      "title": "Tu chófer privado en Champaña",
+      "description": "Green Road Services ofrece un servicio de transporte de alta gama con chófer privado. Ya sea para viajes de negocios, traslados al aeropuerto o excursiones en Champaña, garantizamos comodidad, puntualidad y discreción."
+    },
+    "vehicle": {
+      "title": "Nuestro vehículo",
+      "exterior": "Exterior",
+      "interior": "Interior",
+      "backseats": "Asientos traseros"
+    },
+    "packages": {
+      "title": "Nuestros paquetes",
+      "description": "Disfruta de nuestras tarifas fijas para tus viajes frecuentes a aeropuertos, estaciones y destinos turísticos.",
+      "airports": "Traslados a aeropuertos (CDG, Orly, Beauvais)",
+      "stations": "Traslados a estaciones TGV",
+      "champagne": "Tours de descubrimiento en Champaña",
+      "viewAll": "Ver todos los paquetes"
+    },
+    "availability": {
+      "title": "Alquiler por horas",
+      "description": "¿Necesitas un chófer por varias horas? Elige nuestro servicio de alquiler por horas, ideal para tus eventos o viajes personalizados.",
+      "services": {
+        "business": "Reuniones de negocios",
+        "events": "Bodas y eventos",
+        "evenings": "Noches y salidas",
+        "tours": "Tours turísticos"
+      },
+      "customRequest": "Solicitud personalizada"
+    }
+  },
+  "auth": {
+    "loginTitle": "Inicia sesión en tu cuenta",
+    "signupTitle": "Crea tu cuenta",
+    "googleLogin": "Continuar con Google",
+    "or": "o",
+    "fullName": "Nombre completo",
+    "email": "Email",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "login": "Iniciar sesión",
+    "signup": "Crear mi cuenta",
+    "loading": "Cargando...",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "signupLink": "Registrarse",
+    "loginLink": "Iniciar sesión",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "resendEmail": "Reenviar email de confirmación",
+    "resetPassword": {
+      "description": "Introduce tu dirección de email y te enviaremos un enlace para restablecer tu contraseña.",
+      "submit": "Enviar enlace",
+      "success": "¡Email enviado con éxito!",
+      "checkEmail": "Revisa tu bandeja de entrada y haz clic en el enlace para restablecer tu contraseña."
+    },
+    "errors": {
+      "enterName": "Por favor, introduce tu nombre completo.",
+      "passwordMismatch": "Las contraseñas no coinciden.",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres.",
+      "emailInUse": "Esta dirección de email ya está en uso. Intenta iniciar sesión.",
+      "invalidEmail": "Dirección de email no válida.",
+      "weakPassword": "Contraseña demasiado débil. Usa al menos 6 caracteres.",
+      "networkError": "Error de red. Verifica tu conexión a internet.",
+      "userNotFound": "No se encontró ninguna cuenta con esta dirección de email.",
+      "wrongPassword": "Contraseña incorrecta.",
+      "invalidCredential": "Email o contraseña incorrectos.",
+      "tooManyAttempts": "Demasiados intentos. Por favor, inténtalo de nuevo en unos minutos.",
+      "emailNotVerified": "Tu dirección de email aún no ha sido verificada. Por favor, revisa tu bandeja de entrada y haz clic en el enlace de confirmación.",
+      "popupClosed": "Inicio de sesión cancelado.",
+      "unauthorizedDomain": "Este dominio no está autorizado para iniciar sesión con Google.",
+      "googleError": "Error al iniciar sesión con Google. Por favor, inténtalo de nuevo.",
+      "genericError": "Error de inicio de sesión. Por favor, inténtalo de nuevo."
+    },
+    "success": {
+      "accountCreated": "¡Cuenta creada con éxito! Se ha enviado un email de confirmación a:",
+      "clickLink": "Por favor, haz clic en el enlace del email para activar tu cuenta.",
+      "emailResent": "Se ha enviado un nuevo email de confirmación a:",
+      "alreadyVerified": "Tu email ya está verificado. Puedes iniciar sesión."
+    }
+  },
+  "account": {
+    "title": "Mis viajes",
+    "noBookings": "Aún no hay viajes reservados.",
+    "sections": {
+      "pending": "Viajes pendientes",
+      "pendingMessage": "Esperando validación del chófer...",
+      "accepted": "Viajes aceptados - Pago requerido",
+      "confirmed": "Viajes confirmados",
+      "cancelled": "Viajes cancelados",
+      "refused": "Viajes rechazados"
+    },
+    "pay": "Pagar",
+    "invoice": "Factura PDF",
+    "loading": "Cargando...",
+    "loadingUser": "Cargando usuario...",
+    "cancel": {
+      "button": "Cancelar",
+      "confirmMessage": "¿Estás seguro de que deseas cancelar este viaje?",
+      "confirmWithFees": "Atención: la cancelación con menos de 5 horas de antelación conlleva una tarifa del 30%. ¿Confirmar cancelación?",
+      "reasonPrompt": "Motivo de la cancelación (opcional):",
+      "success": "Viaje cancelado con éxito.",
+      "partialRefund": "Tarifa de cancelación: {{fee}}€. Reembolso: {{refund}}€.",
+      "fullRefund": "Reembolso total: {{refund}}€.",
+      "error": "Error durante la cancelación."
+    }
+  },
+  "dashboard": {
+    "title": "Panel del chófer",
+    "sections": {
+      "pending": "Viajes pendientes",
+      "accepted": "Viajes aceptados (esperando pago)",
+      "confirmed": "Viajes confirmados (pagados)",
+      "cancelled": "Viajes cancelados",
+      "refused": "Viajes rechazados"
+    },
+    "noRides": "Sin viajes.",
+    "trip": "Viaje",
+    "date": "Fecha",
+    "passengers": "Pasajeros",
+    "distance": "Distancia",
+    "price": "Precio",
+    "client": "Cliente",
+    "phone": "Teléfono",
+    "package": "Paquete",
+    "roundTrip": "Ida y vuelta",
+    "accept": "Aceptar",
+    "refuse": "Rechazar",
+    "orderForm": "Formulario de pedido",
+    "confirmAccept": "¿Aceptar este viaje? Se enviará un email con el enlace de pago al cliente.",
+    "confirmRefuse": "¿Rechazar este viaje? Se notificará al cliente por email.",
+    "refuseReason": "Motivo del rechazo (opcional):",
+    "defaultRefuseReason": "Chófer no disponible",
+    "alerts": {
+      "mustLogin": "Debes iniciar sesión.",
+      "acceptSuccess": "¡Viaje aceptado! El cliente ha recibido un email con el enlace de pago.",
+      "refuseSuccess": "Viaje rechazado. El cliente ha sido notificado por email.",
+      "error": "Error:",
+      "acceptError": "No se pudo aceptar el viaje",
+      "refuseError": "No se pudo rechazar el viaje",
+      "serverError": "Error del servidor durante la aceptación."
+    },
+    "loading": "Cargando viajes...",
+    "cancel": {
+      "button": "Cancelar",
+      "confirmMessage": "¿Cancelar este viaje? El cliente será reembolsado completamente.",
+      "reasonPrompt": "Motivo de la cancelación:",
+      "success": "Viaje cancelado. El cliente ha sido notificado y reembolsado.",
+      "error": "Error durante la cancelación."
+    }
+  },
+  "payment": {
+    "success": {
+      "title": "¡Pago exitoso!",
+      "message": "Tu reserva está confirmada."
+    },
+    "cancel": {
+      "title": "Pago cancelado",
+      "message": "Tu pago ha sido cancelado."
+    }
+  },
+  "common": {
+    "km": "km",
+    "euro": "€",
+    "dateUnknown": "Fecha desconocida",
+    "notSpecified": "No especificado",
+    "error": "Error",
+    "success": "Éxito",
+    "loading": "Cargando...",
+    "passengers": "pasajeros",
+    "roundTrip": "Ida y vuelta"
+  },
+  "footer": {
+    "description": "Servicio de chófer privado VTC premium en Reims y Champaña. Traslados a aeropuertos, estaciones, eventos.",
+    "navigation": "Navegación",
+    "legal": "Información legal",
+    "contact": "Contacto",
+    "legalNotice": "Aviso legal",
+    "cgu": "Condiciones de uso",
+    "cgv": "Condiciones de venta",
+    "privacy": "Política de privacidad",
+    "rights": "Todos los derechos reservados."
+  },
+  "legal": {
+    "lastUpdate": "Última actualización",
+    "mentions": {
+      "title": "Aviso Legal",
+      "editor": {
+        "title": "Editor del sitio",
+        "name": "Razón social",
+        "status": "Forma jurídica",
+        "siret": "SIRET",
+        "address": "Dirección",
+        "phone": "Teléfono",
+        "email": "Email",
+        "director": "Director de publicación"
+      },
+      "host": {
+        "title": "Alojamiento",
+        "name": "Nombre",
+        "address": "Dirección",
+        "website": "Sitio web"
+      },
+      "activity": {
+        "title": "Actividad",
+        "description": "Green Road Services es un servicio de transporte de personas con chófer privado (VTC) que opera principalmente en la región de Reims y Champaña.",
+        "license": "Licencia VTC",
+        "insurance": "Seguro RC Profesional"
+      },
+      "intellectual": {
+        "title": "Propiedad intelectual",
+        "description": "Todo el contenido de este sitio (textos, imágenes, logos, etc.) está protegido por derechos de autor. Cualquier reproducción, incluso parcial, está prohibida sin autorización previa."
+      },
+      "contact": {
+        "title": "Contacto"
+      }
+    },
+    "cgu": {
+      "title": "Condiciones Generales de Uso",
+      "article1": {
+        "title": "Objeto",
+        "content": "Las presentes Condiciones Generales de Uso regulan el acceso y uso del sitio web Green Road Services. Al acceder a este sitio, aceptas sin reservas las presentes Condiciones."
+      },
+      "article2": {
+        "title": "Acceso al sitio",
+        "content": "El sitio es accesible gratuitamente para cualquier usuario con acceso a Internet. Green Road Services no se hace responsable de posibles interrupciones del servicio."
+      },
+      "article3": {
+        "title": "Creación de cuenta",
+        "content": "Para realizar una reserva, el usuario debe crear una cuenta proporcionando información precisa y actualizada. El usuario es responsable de la confidencialidad de sus credenciales de acceso."
+      },
+      "article4": {
+        "title": "Uso del servicio",
+        "content": "El usuario se compromete a utilizar el sitio de conformidad con la ley y las presentes Condiciones de Uso. Cualquier uso abusivo o fraudulento está estrictamente prohibido."
+      },
+      "article5": {
+        "title": "Propiedad intelectual",
+        "content": "Todos los elementos del sitio (textos, imágenes, logos, etc.) son propiedad exclusiva de Green Road Services y están protegidos por las leyes de propiedad intelectual."
+      },
+      "article6": {
+        "title": "Responsabilidad",
+        "content": "Green Road Services se esfuerza por proporcionar información precisa pero no garantiza la ausencia de errores. El uso del sitio se realiza bajo la responsabilidad del usuario."
+      },
+      "article7": {
+        "title": "Modificación de las Condiciones",
+        "content": "Green Road Services se reserva el derecho de modificar las presentes Condiciones de Uso en cualquier momento. Las modificaciones entran en vigor desde su publicación en el sitio."
+      }
+    },
+    "cgv": {
+      "title": "Condiciones Generales de Venta",
+      "article1": {
+        "title": "Objeto",
+        "content": "Las presentes Condiciones Generales de Venta regulan los servicios de transporte de personas con chófer privado ofrecidos por Green Road Services."
+      },
+      "article2": {
+        "title": "Servicios ofrecidos",
+        "content": "Green Road Services ofrece servicios de transporte VTC que incluyen: traslados a aeropuertos y estaciones, alquiler por horas, tours por Champaña y transporte para eventos (bodas, seminarios, etc.)."
+      },
+      "article3": {
+        "title": "Reserva",
+        "content": "Las reservas se realizan a través del sitio web o por teléfono. Se confirman tras la validación por nuestro equipo y la recepción del pago. Se envía un email de confirmación al cliente."
+      },
+      "article4": {
+        "title": "Tarifas",
+        "content": "Las tarifas se indican en euros con IVA incluido. Incluyen vehículo, chófer, combustible y peajes. Cualquier tiempo de espera adicional superior a 15 minutos se facturará a 1€/minuto."
+      },
+      "article5": {
+        "title": "Pago",
+        "content": "El pago se realiza online con tarjeta de crédito a través de nuestra plataforma segura Stripe. Se requiere el pago completo para confirmar la reserva."
+      },
+      "article6": {
+        "title": "Cancelación y reembolso",
+        "content": "Las condiciones de cancelación son las siguientes:",
+        "rule1": "Cancelación con más de 5 horas de antelación: reembolso total",
+        "rule2": "Cancelación con menos de 5 horas de antelación: cargo del 30%, reembolso del 70%",
+        "rule3": "Cancelación por el chófer: reembolso total"
+      },
+      "article7": {
+        "title": "Responsabilidad",
+        "content": "Green Road Services está asegurado para el transporte de personas. Nuestra responsabilidad se limita a los daños directos comprobados. No somos responsables de retrasos debido a circunstancias excepcionales (atascos, condiciones meteorológicas, etc.)."
+      },
+      "article8": {
+        "title": "Equipaje",
+        "content": "El transporte de equipaje estándar está incluido en el precio. Para equipaje voluminoso o transporte de equipo específico, contáctenos con antelación."
+      },
+      "article9": {
+        "title": "Reclamaciones",
+        "content": "Cualquier reclamación debe enviarse por email a contact.greenroadservices@gamil.com dentro de los 7 días posteriores al servicio. Nos comprometemos a responder en 48 horas."
+      },
+      "article10": {
+        "title": "Ley aplicable",
+        "content": "Las presentes Condiciones Generales de Venta están sujetas a la ley francesa. En caso de disputa, se buscará una solución amistosa antes de cualquier acción legal. En su defecto, los tribunales de Reims serán competentes."
+      }
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "intro": {
+        "title": "Introducción",
+        "content": "Green Road Services se compromete a proteger la privacidad de sus usuarios. Esta política explica cómo recopilamos, utilizamos y protegemos tus datos personales de acuerdo con el RGPD."
+      },
+      "data": {
+        "title": "Datos recopilados",
+        "content": "Recopilamos los siguientes datos cuando utilizas nuestros servicios:",
+        "item1": "Nombre y apellidos",
+        "item2": "Dirección de email",
+        "item3": "Número de teléfono",
+        "item4": "Direcciones de recogida y destino",
+        "item5": "Información de pago (procesada por Stripe)"
+      },
+      "usage": {
+        "title": "Uso de los datos",
+        "content": "Tus datos se utilizan para:",
+        "item1": "Gestionar tus reservas y proporcionar el servicio de transporte",
+        "item2": "Contactarte respecto a tus viajes",
+        "item3": "Procesar los pagos",
+        "item4": "Mejorar nuestros servicios"
+      },
+      "security": {
+        "title": "Seguridad de los datos",
+        "content": "Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos contra accesos no autorizados, modificaciones o destrucción. Los datos de pago son procesados de forma segura por Stripe."
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "content": "Según el RGPD, tienes los siguientes derechos:",
+        "item1": "Derecho de acceso a tus datos",
+        "item2": "Derecho de rectificación",
+        "item3": "Derecho de supresión",
+        "item4": "Derecho a la portabilidad de datos",
+        "item5": "Derecho de oposición"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Nuestro sitio utiliza cookies técnicas necesarias para el funcionamiento del servicio. Estas cookies no recopilan datos personales con fines publicitarios."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para ejercer tus derechos o para cualquier pregunta sobre tus datos personales, contáctanos en:"
+      }
+    },
+    "acceptCgv": "Acepto las",
+    "cgvLink": "Condiciones Generales de Venta",
+    "cgvRequired": "Debes aceptar las CGV para continuar."
+  }
+}

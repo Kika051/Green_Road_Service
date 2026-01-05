@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Phone } from "lucide-react";
 import { useAuth, useFetch, useForm, useGoogleAutocomplete } from "../hooks";
@@ -20,6 +20,7 @@ const Booking = () => {
     phone: "",
     carSeat: "non",
     carSeatCount: 1,
+    acceptCgv: false, // ✅ Ajout CGV
   });
 
   const [quote, setQuote] = useState(null);
@@ -58,6 +59,12 @@ const Booking = () => {
       return;
     }
 
+    // ✅ Vérification CGV
+    if (!values.acceptCgv) {
+      alert(t("legal.cgvRequired"));
+      return;
+    }
+
     if (!user) {
       navigate("/login");
       return;
@@ -77,6 +84,7 @@ const Booking = () => {
         values.carSeat === "oui" ? parseInt(values.carSeatCount) : 0,
       prix: quote.price,
       kilometers: quote.kilometers,
+      cgvAccepted: true, // ✅ Enregistrer l'acceptation
     });
 
     if (result.success && result.data.success) {
@@ -165,6 +173,31 @@ const Booking = () => {
             <option value="oui">{t("booking.carSeatYes")}</option>
           </select>
 
+          {/* ✅ Checkbox CGV */}
+          <div className="flex items-start gap-3 bg-zinc-800 p-4 rounded-lg border border-zinc-700">
+            <input
+              type="checkbox"
+              id="acceptCgv"
+              checked={values.acceptCgv}
+              onChange={(e) => setValue("acceptCgv", e.target.checked)}
+              className="w-5 h-5 mt-0.5 rounded bg-zinc-700 border-zinc-600 text-green-500 focus:ring-green-500 accent-green-500 cursor-pointer"
+            />
+            <label
+              htmlFor="acceptCgv"
+              className="text-sm text-zinc-300 cursor-pointer"
+            >
+              {t("legal.acceptCgv")}{" "}
+              <Link
+                to="/cgv"
+                target="_blank"
+                className="text-green-500 hover:text-green-400 underline"
+              >
+                {t("legal.cgvLink")}
+              </Link>
+              <span className="text-red-500"> *</span>
+            </label>
+          </div>
+
           <Button
             onClick={handleCalculate}
             loading={loading}
@@ -187,7 +220,14 @@ const Booking = () => {
             </p>
 
             <div className="mt-6 flex gap-4 justify-center">
-              <Button onClick={handleReservation} size="lg">
+              <Button
+                onClick={handleReservation}
+                size="lg"
+                disabled={!values.acceptCgv}
+                className={
+                  !values.acceptCgv ? "opacity-50 cursor-not-allowed" : ""
+                }
+              >
                 {t("booking.yes")}
               </Button>
               <Button
@@ -198,6 +238,12 @@ const Booking = () => {
                 {t("booking.no")}
               </Button>
             </div>
+
+            {!values.acceptCgv && (
+              <p className="text-red-500 text-sm text-center mt-3">
+                {t("legal.cgvRequired")}
+              </p>
+            )}
           </div>
         )}
       </div>

@@ -145,20 +145,20 @@ exports.cancelBooking = async (req, res) => {
     `;
 
     await transporter.sendMail({
-      from: `"GreenRoad Services" <${process.env.EMAIL_USER}>`,
+      from: `"Green Road Services" <${process.env.EMAIL_USER}>`,
       to: booking.email,
       subject:
         cancelledBy === "driver"
-          ? "Course annulée par le chauffeur - GreenRoad Services"
-          : "Confirmation d'annulation - GreenRoad Services",
+          ? "Course annulée par le chauffeur - Green Road Services"
+          : "Confirmation d'annulation - Green Road Services",
       html: clientEmailContent,
     });
 
     if (cancelledBy === "client") {
       await transporter.sendMail({
-        from: `"GreenRoad Services" <${process.env.EMAIL_USER}>`,
+        from: `"Green Road Services" <${process.env.EMAIL_USER}>`,
         to: process.env.EMAIL_USER,
-        subject: "Annulation de course - GreenRoad Services",
+        subject: "Annulation de course - Green Road Services",
         html: `
           <h2>Une course a été annulée par le client</h2>
           <p><strong>Client :</strong> ${

@@ -163,7 +163,7 @@
     },
     "intro": {
       "title": "Your private chauffeur in Champagne",
-      "description": "GreenRoad Services offers a high-end transportation service with a private chauffeur. Whether for business trips, airport transfers or outings in Champagne, we guarantee comfort, punctuality and discretion."
+      "description": "Green Road Services offers a high-end transportation service with a private chauffeur. Whether for business trips, airport transfers or outings in Champagne, we guarantee comfort, punctuality and discretion."
     },
     "vehicle": {
       "title": "Our vehicle",
@@ -192,7 +192,7 @@
     }
   },
   "auth": {
-    "loginTitle": "Log in to your account",
+    "loginTitle": "Sign in to your account",
     "signupTitle": "Create your account",
     "googleLogin": "Continue with Google",
     "or": "or",
@@ -200,25 +200,26 @@
     "email": "Email",
     "password": "Password",
     "confirmPassword": "Confirm password",
-    "login": "Log in",
+    "login": "Sign in",
     "signup": "Create my account",
     "loading": "Loading...",
     "noAccount": "Don't have an account?",
     "hasAccount": "Already have an account?",
     "signupLink": "Sign up",
-    "loginLink": "Log in",
+    "loginLink": "Sign in",
     "forgotPassword": "Forgot password?",
-    "terms": "By continuing, you accept our",
-    "termsLink": "Terms and Conditions",
-    "and": "and our",
-    "privacyLink": "Privacy Policy",
-    "verifyEmail": "Check your email",
     "resendEmail": "Resend confirmation email",
+    "resetPassword": {
+      "description": "Enter your email address and we'll send you a link to reset your password.",
+      "submit": "Send link",
+      "success": "Email sent successfully!",
+      "checkEmail": "Check your inbox and click the link to reset your password."
+    },
     "errors": {
       "enterName": "Please enter your full name.",
       "passwordMismatch": "Passwords do not match.",
       "passwordTooShort": "Password must be at least 6 characters.",
-      "emailInUse": "This email address is already in use. Try logging in.",
+      "emailInUse": "This email address is already in use. Try signing in.",
       "invalidEmail": "Invalid email address.",
       "weakPassword": "Password too weak. Use at least 6 characters.",
       "networkError": "Network error. Check your internet connection.",
@@ -227,17 +228,16 @@
       "invalidCredential": "Incorrect email or password.",
       "tooManyAttempts": "Too many attempts. Please try again in a few minutes.",
       "emailNotVerified": "Your email address has not been verified yet. Please check your inbox and click the confirmation link.",
-      "popupClosed": "Login cancelled.",
-      "unauthorizedDomain": "This domain is not authorized for Google login.",
-      "googleError": "Error logging in with Google. Please try again.",
-      "genericError": "Login error. Please try again."
+      "popupClosed": "Sign-in cancelled.",
+      "unauthorizedDomain": "This domain is not authorized for Google sign-in.",
+      "googleError": "Error signing in with Google. Please try again.",
+      "genericError": "Sign-in error. Please try again."
     },
     "success": {
-      "accountCreated": "Account created successfully! A confirmation email has been sent to",
-      "clickLink": "Please click the link to activate your account.",
-      "emailFailed": "Sending the verification email failed. You can request a new one from the login page.",
-      "emailResent": "A new confirmation email has been sent to",
-      "alreadyVerified": "Your email is already verified. You can log in."
+      "accountCreated": "Account created successfully! A confirmation email has been sent to:",
+      "clickLink": "Please click the link in the email to activate your account.",
+      "emailResent": "A new confirmation email has been sent to:",
+      "alreadyVerified": "Your email is already verified. You can sign in."
     }
   },
   "account": {
@@ -336,7 +336,7 @@
     "titleHighlight": "Packages",
     "subtitle": "Enjoy our preferential rates for your trips from Reims. Fixed prices, no surprises!",
     "savings": "Up to 20% savings compared to standard rate",
-    "destinations": "destinations",
+    "destinationsLabel": "destinations",
     "book": "Book",
     "perTrip": "/ trip",
     "categories": {
@@ -407,5 +407,176 @@
       "success": "Your package booking has been sent! You will receive a confirmation after validation by our driver.",
       "error": "Error during booking. Please try again."
     }
+  },
+  "footer": {
+    "description": "Premium private chauffeur service in Reims and Champagne. Airport transfers, train stations, events.",
+    "navigation": "Navigation",
+    "legal": "Legal Information",
+    "contact": "Contact",
+    "legalNotice": "Legal Notice",
+    "cgu": "Terms of Use",
+    "cgv": "Terms of Sale",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
+  },
+  "legal": {
+    "lastUpdate": "Last updated",
+    "mentions": {
+      "title": "Legal Notice",
+      "editor": {
+        "title": "Website Publisher",
+        "name": "Company name",
+        "status": "Legal status",
+        "siret": "SIRET",
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email",
+        "director": "Publication Director"
+      },
+      "host": {
+        "title": "Hosting Provider",
+        "name": "Name",
+        "address": "Address",
+        "website": "Website"
+      },
+      "activity": {
+        "title": "Activity",
+        "description": "Green Road Services is a private chauffeur transportation service (VTC) operating primarily in the Reims and Champagne region.",
+        "license": "VTC License",
+        "insurance": "Professional Liability Insurance"
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "description": "All content on this site (texts, images, logos, etc.) is protected by copyright. Any reproduction, even partial, is prohibited without prior authorization."
+      },
+      "contact": {
+        "title": "Contact"
+      }
+    },
+    "cgu": {
+      "title": "Terms of Use",
+      "article1": {
+        "title": "Purpose",
+        "content": "These Terms of Use govern access to and use of the Green Road Services website. By accessing this site, you accept these Terms without reservation."
+      },
+      "article2": {
+        "title": "Site Access",
+        "content": "The site is freely accessible to any user with internet access. Green Road Services cannot be held responsible for any service interruptions."
+      },
+      "article3": {
+        "title": "Account Creation",
+        "content": "To make a reservation, the user must create an account by providing accurate and up-to-date information. The user is responsible for the confidentiality of their login credentials."
+      },
+      "article4": {
+        "title": "Service Use",
+        "content": "The user agrees to use the site in compliance with the law and these Terms of Use. Any abusive or fraudulent use is strictly prohibited."
+      },
+      "article5": {
+        "title": "Intellectual Property",
+        "content": "All elements of the site (texts, images, logos, etc.) are the exclusive property of Green Road Services and are protected by intellectual property laws."
+      },
+      "article6": {
+        "title": "Liability",
+        "content": "Green Road Services strives to provide accurate information but does not guarantee the absence of errors. Use of the site is at the user's own risk."
+      },
+      "article7": {
+        "title": "Modification of Terms",
+        "content": "Green Road Services reserves the right to modify these Terms of Use at any time. Changes take effect upon publication on the site."
+      }
+    },
+    "cgv": {
+      "title": "Terms of Sale",
+      "article1": {
+        "title": "Purpose",
+        "content": "These Terms of Sale govern the private chauffeur transportation services offered by Green Road Services."
+      },
+      "article2": {
+        "title": "Services Offered",
+        "content": "Green Road Services offers VTC transportation services including: airport and train station transfers, hourly hire, Champagne tours, and event transportation (weddings, seminars, etc.)."
+      },
+      "article3": {
+        "title": "Booking",
+        "content": "Bookings are made via the website or by phone. They are confirmed after validation by our team and receipt of payment. A confirmation email is sent to the customer."
+      },
+      "article4": {
+        "title": "Rates",
+        "content": "Rates are shown in euros including all taxes. They include the vehicle, driver, fuel, and tolls. Any additional waiting time beyond 15 minutes will be charged at €1/minute."
+      },
+      "article5": {
+        "title": "Payment",
+        "content": "Payment is made online by credit card via our secure Stripe platform. Full payment is required to confirm the booking."
+      },
+      "article6": {
+        "title": "Cancellation and Refund",
+        "content": "The cancellation conditions are as follows:",
+        "rule1": "Cancellation more than 5 hours before the ride: full refund",
+        "rule2": "Cancellation less than 5 hours before the ride: 30% fee, 70% refund",
+        "rule3": "Cancellation by driver: full refund"
+      },
+      "article7": {
+        "title": "Liability",
+        "content": "Green Road Services is insured for passenger transportation. Our liability is limited to proven direct damages. We are not responsible for delays due to exceptional circumstances (traffic jams, weather conditions, etc.)."
+      },
+      "article8": {
+        "title": "Luggage",
+        "content": "Standard luggage transportation is included in the price. For bulky luggage or specific equipment transport, please contact us in advance."
+      },
+      "article9": {
+        "title": "Complaints",
+        "content": "Any complaint must be sent by email to contact.greenroadservices@gmail.com within 7 days of the service. We commit to responding within 48 hours."
+      },
+      "article10": {
+        "title": "Applicable Law",
+        "content": "These Terms of Sale are subject to French law. In case of dispute, an amicable solution will be sought before any legal action. Failing that, the courts of Reims will have jurisdiction."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": {
+        "title": "Introduction",
+        "content": "Green Road Services is committed to protecting the privacy of its users. This policy explains how we collect, use, and protect your personal data in accordance with GDPR."
+      },
+      "data": {
+        "title": "Data Collected",
+        "content": "We collect the following data when you use our services:",
+        "item1": "First and last name",
+        "item2": "Email address",
+        "item3": "Phone number",
+        "item4": "Pickup and destination addresses",
+        "item5": "Payment information (processed by Stripe)"
+      },
+      "usage": {
+        "title": "Data Usage",
+        "content": "Your data is used to:",
+        "item1": "Manage your bookings and provide transportation service",
+        "item2": "Contact you regarding your rides",
+        "item3": "Process payments",
+        "item4": "Improve our services"
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement technical and organizational security measures to protect your data against unauthorized access, modification, or destruction. Payment data is processed securely by Stripe."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:",
+        "item1": "Right to access your data",
+        "item2": "Right to rectification",
+        "item3": "Right to erasure",
+        "item4": "Right to data portability",
+        "item5": "Right to object"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Our site uses technical cookies necessary for the service to function. These cookies do not collect personal data for advertising purposes."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "To exercise your rights or for any questions regarding your personal data, contact us at:"
+      }
+    },
+    "acceptCgv": "I accept the",
+    "cgvLink": "Terms of Sale",
+    "cgvRequired": "You must accept the Terms of Sale to continue."
   }
 }

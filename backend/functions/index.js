@@ -22,6 +22,12 @@ const { validateBooking } = require("./handlers/validateBooking");
 const { requestAvailability } = require("./handlers/requestAvailability");
 const { refuseBooking } = require("./handlers/refuseBooking");
 const { cancelBooking } = require("./handlers/cancelBooking");
+const { sendVerificationEmail } = require("./handlers/sendVerificationEmail");
+const {
+  resendVerificationEmail,
+} = require("./handlers/resendVerificationEmail");
+const { sendPasswordResetEmail } = require("./handlers/sendPasswordResetEmail");
+const { sendWelcomeEmail } = require("./handlers/sendWelcomeEmail");
 
 // ✅ Définition des routes express
 app.post("/createQuote", createQuote);
@@ -33,6 +39,10 @@ app.post("/validateBooking", validateBooking);
 app.post("/requestAvailability", requestAvailability);
 app.post("/refuseBooking", refuseBooking);
 app.post("/cancelBooking", cancelBooking);
+app.post("/sendVerificationEmail", sendVerificationEmail);
+app.post("/resendVerificationEmail", resendVerificationEmail);
+app.post("/sendPasswordResetEmail", sendPasswordResetEmail);
+app.post("/sendWelcomeEmail", sendWelcomeEmail);
 
 // ✅ Export des fonctions Firebase
 exports.api = functions.https.onRequest(app);

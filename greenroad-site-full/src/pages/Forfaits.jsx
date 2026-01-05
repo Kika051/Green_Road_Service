@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, db } from "../firebase/firebaseConfig";
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { auth } from "../firebase/firebaseConfig";
+import { API_URL } from "../utils/constants";
 import {
   Plane,
   MapPin,
@@ -38,12 +38,12 @@ const Forfaits = () => {
     phone: "",
     allerRetour: false,
     commentaire: "",
+    acceptCgv: false,
   });
 
   const pickupInputRef = useRef(null);
   const autocompleteRef = useRef(null);
 
-  // Forfaits data avec clés de traduction
   const forfaits = {
     aeroports: {
       titreKey: "forfaits.categories.airports",
@@ -323,6 +323,7 @@ const Forfaits = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!formData.pickupAddress.trim()) {
       alert(t("forfaits.alerts.enterAddress"));
       return;
@@ -331,46 +332,57 @@ const Forfaits = () => {
       alert(t("forfaits.alerts.enterPhone"));
       return;
     }
+    if (!formData.acceptCgv) {
+      alert(t("legal.cgvRequired"));
+      return;
+    }
+
     setLoading(true);
     try {
-      const bookingData = {
-        clientId: user.uid,
-        email: user.email,
-        clientName: user.displayName || user.email,
-        phone: formData.phone,
-        pickup: formData.pickupAddress,
-        dropoff: selectedForfait.nom,
-        datetime: Timestamp.fromDate(
-          new Date(`${formData.date}T${formData.time}`)
-        ),
-        passengers: parseInt(formData.passengers),
-        prix: formData.allerRetour
-          ? selectedForfait.prix * 2
-          : selectedForfait.prix,
-        kilometers: selectedForfait.distance,
-        status: "en_attente",
-        driverStatus: "pending",
-        createdAt: Timestamp.now(),
-        type: "forfait",
-        forfaitId: selectedForfait.id,
-        forfaitNom: selectedForfait.nom,
-        allerRetour: formData.allerRetour,
-        commentaire: formData.commentaire,
-      };
-      await addDoc(collection(db, "bookings"), bookingData);
-      alert(t("forfaits.alerts.success"));
-      setShowModal(false);
-      setSelectedForfait(null);
-      setFormData({
-        pickupAddress: "",
-        date: "",
-        time: "",
-        passengers: 1,
-        phone: "",
-        allerRetour: false,
-        commentaire: "",
+      const response = await fetch(`${API_URL}/createBookingRequest`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: user.email,
+          uid: user.uid,
+          clientName: user.displayName || user.email,
+          phone: formData.phone,
+          pickup: formData.pickupAddress,
+          dropoff: selectedForfait.nom,
+          datetime: `${formData.date}T${formData.time}`,
+          passengers: parseInt(formData.passengers),
+          prix: formData.allerRetour
+            ? selectedForfait.prix * 2
+            : selectedForfait.prix,
+          kilometers: selectedForfait.distance,
+          type: "forfait",
+          forfaitId: selectedForfait.id,
+          forfaitNom: selectedForfait.nom,
+          allerRetour: formData.allerRetour,
+          commentaire: formData.commentaire,
+        }),
       });
-      navigate("/account");
+
+      const data = await response.json();
+
+      if (data.success) {
+        alert(t("forfaits.alerts.success"));
+        setShowModal(false);
+        setSelectedForfait(null);
+        setFormData({
+          pickupAddress: "",
+          date: "",
+          time: "",
+          passengers: 1,
+          phone: "",
+          allerRetour: false,
+          commentaire: "",
+          acceptCgv: false,
+        });
+        navigate("/account");
+      } else {
+        alert(data.error || t("forfaits.alerts.error"));
+      }
     } catch (error) {
       console.error("Erreur réservation:", error);
       alert(t("forfaits.alerts.error"));
@@ -385,7 +397,6 @@ const Forfaits = () => {
   return (
     <div className="min-h-screen bg-zinc-950 text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">
             {t("forfaits.title")}{" "}
@@ -402,7 +413,6 @@ const Forfaits = () => {
           </div>
         </div>
 
-        {/* Catégories */}
         <div className="space-y-4">
           {Object.entries(forfaits).map(([key, categorie]) => {
             const Icon = categorie.icon;
@@ -423,7 +433,7 @@ const Forfaits = () => {
                     </span>
                     <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
                       {categorie.destinations.length}{" "}
-                      {t("forfaits.destinations")}
+                      {t("forfaits.destinationsLabel")}
                     </span>
                   </div>
                   {isExpanded ? (
@@ -481,7 +491,6 @@ const Forfaits = () => {
           })}
         </div>
 
-        {/* Features */}
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 text-center">
             <Car className="mx-auto mb-3 text-green-500" size={40} />
@@ -513,7 +522,6 @@ const Forfaits = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {showModal && selectedForfait && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto">
           <div className="bg-zinc-900 rounded-2xl max-w-md w-full p-6 border border-zinc-700 my-8">
@@ -574,9 +582,6 @@ const Forfaits = () => {
                   placeholder="06 12 34 56 78"
                   className="w-full bg-zinc-800 border border-zinc-700 rounded-lg p-3 text-white placeholder-zinc-500 focus:border-green-500 focus:outline-none"
                 />
-                <p className="text-xs text-zinc-500 mt-1">
-                  {t("forfaits.modal.phoneHint")}
-                </p>
               </div>
 
               <div>
@@ -640,9 +645,9 @@ const Forfaits = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, allerRetour: e.target.checked })
                   }
-                  className="w-5 h-5 rounded bg-zinc-700 border-zinc-600 text-green-500 focus:ring-green-500"
+                  className="w-5 h-5 rounded bg-zinc-700 border-zinc-600 text-green-500 focus:ring-green-500 accent-green-500"
                 />
-                <label htmlFor="allerRetour" className="flex-1">
+                <label htmlFor="allerRetour" className="flex-1 cursor-pointer">
                   <span className="font-medium">
                     {t("forfaits.modal.roundTrip")}
                   </span>
@@ -706,6 +711,32 @@ const Forfaits = () => {
                 )}
               </div>
 
+              <div className="flex items-start gap-3 bg-zinc-800 p-4 rounded-lg border border-zinc-700">
+                <input
+                  type="checkbox"
+                  id="acceptCgv"
+                  checked={formData.acceptCgv}
+                  onChange={(e) =>
+                    setFormData({ ...formData, acceptCgv: e.target.checked })
+                  }
+                  className="w-5 h-5 mt-0.5 rounded bg-zinc-700 border-zinc-600 text-green-500 focus:ring-green-500 accent-green-500 cursor-pointer"
+                />
+                <label
+                  htmlFor="acceptCgv"
+                  className="text-sm text-zinc-300 cursor-pointer"
+                >
+                  {t("legal.acceptCgv")}{" "}
+                  <Link
+                    to="/cgv"
+                    target="_blank"
+                    className="text-green-500 hover:text-green-400 underline"
+                  >
+                    {t("legal.cgvLink")}
+                  </Link>
+                  <span className="text-red-500"> *</span>
+                </label>
+              </div>
+
               <div className="flex gap-3">
                 <button
                   type="button"
@@ -719,6 +750,7 @@ const Forfaits = () => {
                       phone: "",
                       allerRetour: false,
                       commentaire: "",
+                      acceptCgv: false,
                     });
                   }}
                   className="flex-1 bg-zinc-700 hover:bg-zinc-600 py-3 rounded-lg font-medium transition"
@@ -727,8 +759,8 @@ const Forfaits = () => {
                 </button>
                 <button
                   type="submit"
-                  disabled={loading}
-                  className="flex-1 bg-green-600 hover:bg-green-700 py-3 rounded-lg font-medium transition flex items-center justify-center gap-2 disabled:opacity-50"
+                  disabled={loading || !formData.acceptCgv}
+                  className="flex-1 bg-green-600 hover:bg-green-700 py-3 rounded-lg font-medium transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
                     <>

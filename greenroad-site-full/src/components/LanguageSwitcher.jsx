@@ -1,13 +1,14 @@
-import { useState, useRef, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const languages = [
-  { code: 'fr', flag: '🇫🇷' },
-  { code: 'en', flag: '🇬🇧' },
-  { code: 'de', flag: '🇩🇪' },
-  { code: 'it', flag: '🇮🇹' },
-  { code: 'zh', flag: '🇨🇳' },
-  { code: 'ru', flag: '🇷🇺' },
+  { code: "fr", flag: "🇫🇷" },
+  { code: "en", flag: "🇬🇧" },
+  { code: "de", flag: "🇩🇪" },
+  { code: "it", flag: "🇮🇹" },
+  { code: "zh", flag: "🇨🇳" },
+  { code: "ru", flag: "🇷🇺" },
+  { code: "es", flag: "🇪🇸" },
 ];
 
 const LanguageSwitcher = () => {
@@ -15,14 +16,15 @@ const LanguageSwitcher = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
-  const currentLang = languages.find((l) => l.code === i18n.language) || languages[0];
+  const currentLang =
+    languages.find((l) => l.code === i18n.language) || languages[0];
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (ref.current && !ref.current.contains(e.target)) setIsOpen(false);
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -39,9 +41,12 @@ const LanguageSwitcher = () => {
           {languages.map((lang) => (
             <button
               key={lang.code}
-              onClick={() => { i18n.changeLanguage(lang.code); setIsOpen(false); }}
+              onClick={() => {
+                i18n.changeLanguage(lang.code);
+                setIsOpen(false);
+              }}
               className={`w-full px-4 py-2 text-xl hover:bg-zinc-700 ${
-                i18n.language === lang.code ? 'bg-green-600/20' : ''
+                i18n.language === lang.code ? "bg-green-600/20" : ""
               }`}
             >
               {lang.flag}

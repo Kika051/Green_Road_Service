@@ -208,12 +208,13 @@
     "signupLink": "S'inscrire",
     "loginLink": "Se connecter",
     "forgotPassword": "Mot de passe oublié ?",
-    "terms": "En continuant, vous acceptez nos",
-    "termsLink": "Conditions Générales",
-    "and": "et notre",
-    "privacyLink": "Politique de Confidentialité",
-    "verifyEmail": "Vérifiez votre email",
     "resendEmail": "Renvoyer l'email de confirmation",
+    "resetPassword": {
+      "description": "Entrez votre adresse email et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "submit": "Envoyer le lien",
+      "success": "Email envoyé avec succès !",
+      "checkEmail": "Vérifiez votre boîte de réception et cliquez sur le lien pour réinitialiser votre mot de passe."
+    },
     "errors": {
       "enterName": "Veuillez entrer votre nom et prénom.",
       "passwordMismatch": "Les mots de passe ne correspondent pas.",
@@ -233,10 +234,9 @@
       "genericError": "Erreur de connexion. Veuillez réessayer."
     },
     "success": {
-      "accountCreated": "Compte créé avec succès ! Un email de confirmation a été envoyé à",
-      "clickLink": "Veuillez cliquer sur le lien pour activer votre compte.",
-      "emailFailed": "L'envoi de l'email de vérification a échoué. Vous pouvez demander un nouvel envoi depuis la page de connexion.",
-      "emailResent": "Un nouvel email de confirmation a été envoyé à",
+      "accountCreated": "Compte créé avec succès ! Un email de confirmation a été envoyé à :",
+      "clickLink": "Veuillez cliquer sur le lien dans l'email pour activer votre compte.",
+      "emailResent": "Un nouvel email de confirmation a été envoyé à :",
       "alreadyVerified": "Votre email est déjà vérifié. Vous pouvez vous connecter."
     }
   },
@@ -336,7 +336,7 @@
     "titleHighlight": "Forfaits",
     "subtitle": "Profitez de nos prix préférentiels pour vos trajets depuis Reims. Tarifs fixes, sans surprise !",
     "savings": "Jusqu'à 20% d'économie par rapport au tarif standard",
-    "destinations": "destinations",
+    "destinationsLabel": "destinations",
     "book": "Réserver",
     "perTrip": "/ trajet",
     "categories": {
@@ -407,5 +407,176 @@
       "success": "Votre réservation forfait a été envoyée ! Vous recevrez une confirmation après validation par notre chauffeur.",
       "error": "Erreur lors de la réservation. Veuillez réessayer."
     }
+  },
+  "footer": {
+    "description": "Service de chauffeur privé VTC premium à Reims et en Champagne. Transferts aéroports, gares, événements.",
+    "navigation": "Navigation",
+    "legal": "Informations légales",
+    "contact": "Contact",
+    "legalNotice": "Mentions légales",
+    "cgu": "Conditions d'utilisation",
+    "cgv": "Conditions de vente",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
+  },
+  "legal": {
+    "lastUpdate": "Dernière mise à jour",
+    "mentions": {
+      "title": "Mentions Légales",
+      "editor": {
+        "title": "Éditeur du site",
+        "name": "Raison sociale",
+        "status": "Statut juridique",
+        "siret": "SIRET",
+        "address": "Adresse",
+        "phone": "Téléphone",
+        "email": "Email",
+        "director": "Directeur de publication"
+      },
+      "host": {
+        "title": "Hébergeur",
+        "name": "Nom",
+        "address": "Adresse",
+        "website": "Site web"
+      },
+      "activity": {
+        "title": "Activité",
+        "description": "Green Road Services est un service de transport de personnes avec chauffeur privé (VTC) opérant principalement dans la région de Reims et la Champagne.",
+        "license": "Licence VTC",
+        "insurance": "Assurance RC Pro"
+      },
+      "intellectual": {
+        "title": "Propriété intellectuelle",
+        "description": "L'ensemble du contenu de ce site (textes, images, logos, etc.) est protégé par le droit d'auteur. Toute reproduction, même partielle, est interdite sans autorisation préalable."
+      },
+      "contact": {
+        "title": "Contact"
+      }
+    },
+    "cgu": {
+      "title": "Conditions Générales d'Utilisation",
+      "article1": {
+        "title": "Objet",
+        "content": "Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation du site web Green Road Services. En accédant à ce site, vous acceptez sans réserve les présentes CGU."
+      },
+      "article2": {
+        "title": "Accès au site",
+        "content": "Le site est accessible gratuitement à tout utilisateur disposant d'un accès internet. Green Road Services ne saurait être tenu responsable des éventuelles interruptions de service."
+      },
+      "article3": {
+        "title": "Création de compte",
+        "content": "Pour effectuer une réservation, l'utilisateur doit créer un compte en fournissant des informations exactes et à jour. L'utilisateur est responsable de la confidentialité de ses identifiants de connexion."
+      },
+      "article4": {
+        "title": "Utilisation du service",
+        "content": "L'utilisateur s'engage à utiliser le site de manière conforme à la loi et aux présentes CGU. Tout usage abusif ou frauduleux est strictement interdit."
+      },
+      "article5": {
+        "title": "Propriété intellectuelle",
+        "content": "Tous les éléments du site (textes, images, logos, etc.) sont la propriété exclusive de Green Road Services et sont protégés par les lois relatives à la propriété intellectuelle."
+      },
+      "article6": {
+        "title": "Responsabilité",
+        "content": "Green Road Services s'efforce de fournir des informations exactes mais ne garantit pas l'absence d'erreurs. L'utilisation du site se fait sous la responsabilité de l'utilisateur."
+      },
+      "article7": {
+        "title": "Modification des CGU",
+        "content": "Green Road Services se réserve le droit de modifier les présentes CGU à tout moment. Les modifications entrent en vigueur dès leur publication sur le site."
+      }
+    },
+    "cgv": {
+      "title": "Conditions Générales de Vente",
+      "article1": {
+        "title": "Objet",
+        "content": "Les présentes Conditions Générales de Vente (CGV) régissent les prestations de transport de personnes avec chauffeur privé proposées par Green Road Services."
+      },
+      "article2": {
+        "title": "Services proposés",
+        "content": "Green Road Services propose des services de transport VTC incluant : transferts aéroports et gares, mise à disposition horaire, circuits touristiques en Champagne, et transports pour événements (mariages, séminaires, etc.)."
+      },
+      "article3": {
+        "title": "Réservation",
+        "content": "La réservation s'effectue via le site web ou par téléphone. Elle est confirmée après validation par notre équipe et réception du paiement. Un email de confirmation est envoyé au client."
+      },
+      "article4": {
+        "title": "Tarifs",
+        "content": "Les tarifs sont indiqués en euros TTC. Ils incluent le véhicule, le chauffeur, le carburant et les péages. Tout temps d'attente supplémentaire au-delà de 15 minutes sera facturé 1€/minute."
+      },
+      "article5": {
+        "title": "Paiement",
+        "content": "Le paiement s'effectue en ligne par carte bancaire via notre plateforme sécurisée Stripe. Le paiement intégral est requis pour confirmer la réservation."
+      },
+      "article6": {
+        "title": "Annulation et remboursement",
+        "content": "Les conditions d'annulation sont les suivantes :",
+        "rule1": "Annulation plus de 5 heures avant la course : remboursement intégral",
+        "rule2": "Annulation moins de 5 heures avant la course : frais de 30%, remboursement de 70%",
+        "rule3": "Annulation par le chauffeur : remboursement intégral"
+      },
+      "article7": {
+        "title": "Responsabilité",
+        "content": "Green Road Services est assuré pour le transport de personnes. Notre responsabilité est limitée aux dommages directs prouvés. Nous ne sommes pas responsables des retards dus à des circonstances exceptionnelles (embouteillages, conditions météo, etc.)."
+      },
+      "article8": {
+        "title": "Bagages",
+        "content": "Le transport des bagages standards est inclus dans le prix. Pour les bagages volumineux ou le transport de matériel spécifique, veuillez nous contacter au préalable."
+      },
+      "article9": {
+        "title": "Réclamations",
+        "content": "Toute réclamation doit être adressée par email à contact.greenroadservices@gmail.com dans un délai de 7 jours suivant la prestation. Nous nous engageons à répondre sous 48 heures."
+      },
+      "article10": {
+        "title": "Droit applicable",
+        "content": "Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant tout recours judiciaire. À défaut, les tribunaux de Reims seront compétents."
+      }
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "intro": {
+        "title": "Introduction",
+        "content": "Green Road Services s'engage à protéger la vie privée de ses utilisateurs. Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles conformément au RGPD."
+      },
+      "data": {
+        "title": "Données collectées",
+        "content": "Nous collectons les données suivantes lors de votre utilisation de nos services :",
+        "item1": "Nom et prénom",
+        "item2": "Adresse email",
+        "item3": "Numéro de téléphone",
+        "item4": "Adresses de prise en charge et de destination",
+        "item5": "Informations de paiement (traitées par Stripe)"
+      },
+      "usage": {
+        "title": "Utilisation des données",
+        "content": "Vos données sont utilisées pour :",
+        "item1": "Gérer vos réservations et assurer le service de transport",
+        "item2": "Vous contacter concernant vos courses",
+        "item3": "Traiter les paiements",
+        "item4": "Améliorer nos services"
+      },
+      "security": {
+        "title": "Sécurité des données",
+        "content": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données contre tout accès non autorisé, modification ou destruction. Les données de paiement sont traitées de manière sécurisée par Stripe."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "content": "Conformément au RGPD, vous disposez des droits suivants :",
+        "item1": "Droit d'accès à vos données",
+        "item2": "Droit de rectification",
+        "item3": "Droit à l'effacement",
+        "item4": "Droit à la portabilité",
+        "item5": "Droit d'opposition"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Notre site utilise des cookies techniques nécessaires au fonctionnement du service. Ces cookies ne collectent pas de données personnelles à des fins publicitaires."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour exercer vos droits ou pour toute question concernant vos données personnelles, contactez-nous à :"
+      }
+    },
+    "acceptCgv": "J'accepte les",
+    "cgvLink": "Conditions Générales de Vente",
+    "cgvRequired": "Vous devez accepter les CGV pour continuer."
   }
 }
