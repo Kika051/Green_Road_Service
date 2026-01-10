@@ -1,28 +1,45 @@
-const functions = require("firebase-functions");
 const axios = require("axios");
-const cors = require("cors");
+const quoteCache = new Map();
+const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
-const corsHandler = cors({
-  origin: true,
-  methods: ["POST", "OPTIONS"],
-  credentials: true,
-});
+const generateCacheKey = (pickup, dropoff) => {
+  const normalizedPickup = pickup.toLowerCase().trim().replace(/\s+/g, " ");
+  const normalizedDropoff = dropoff.toLowerCase().trim().replace(/\s+/g, " ");
+  return `${normalizedPickup}|${normalizedDropoff}`;
+};
 
-exports.createQuote = functions.https.onRequest((req, res) => {
-  corsHandler(req, res, async () => {
-    // ✅ Gérer les requêtes preflight (OPTIONS)
-    if (req.method === "OPTIONS") {
-      return res.status(204).send("");
+// Nettoyage périodique du cache
+setInterval(() => {
+  const now = Date.now();
+  for (const [key, entry] of quoteCache.entries()) {
+    if (now - entry.timestamp > CACHE_DURATION) {
+      quoteCache.delete(key);
     }
+  }
+}, 10 * 60 * 1000);
 
-    // ❌ Méthode non autorisée
-    if (req.method !== "POST") {
-      return res.status(405).send("Méthode non autorisée");
-    }
+const sanitizeAddress = (address) => {
+  if (!address || typeof address !== "string") return null;
+  if (address.length > 500) return null;
+  return address
+    .trim()
+    .replace(/<[^>]*>/g, "")
+    .replace(/[<>\"']/g, "");
+};
 
-    const { pickup, dropoff, stops = [] } = req.body;
+const isValidAddress = (address) => {
+  if (!address) return false;
+  return address.length >= 5 && /[a-zA-ZÀ-ÿ]/.test(address);
+};
 
-    // ⚠️ Champs obligatoires
+exports.createQuote = async (req, res) => {
+  try {
+    const { pickup: rawPickup, dropoff: rawDropoff, stops = [] } = req.body;
+
+    // Validation
+    const pickup = sanitizeAddress(rawPickup);
+    const dropoff = sanitizeAddress(rawDropoff);
+
     if (!pickup || !dropoff) {
       return res.status(400).json({
         success: false,
@@ -30,44 +47,109 @@ exports.createQuote = functions.https.onRequest((req, res) => {
       });
     }
 
-    try {
-      // 🔑 Clé API Google Maps
-      const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-      const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(
-        pickup
-      )}&destinations=${encodeURIComponent(
-        dropoff
-      )}&mode=driving&units=metric&key=${apiKey}`;
-
-      // 📡 Appel à l’API Distance Matrix
-      const response = await axios.get(url);
-      const element = response.data?.rows?.[0]?.elements?.[0];
-
-      if (!element || element.status !== "OK") {
-        throw new Error("La réponse de Google Maps est invalide.");
-      }
-
-      const distanceKm = element.distance.value / 1000;
-      const basePrice = distanceKm * 2;
-      const finalPrice = basePrice < 20 ? 20 : basePrice;
-
-      // 🧾 Structure du devis
-      const quote = {
-        pickup,
-        dropoff,
-        stops,
-        kilometers: distanceKm.toFixed(2),
-        price: finalPrice.toFixed(2),
-        createdAt: new Date().toISOString(),
-      };
-
-      return res.status(200).json({ success: true, quote });
-    } catch (error) {
-      console.error("❌ Erreur lors de la génération du devis :", error);
-      return res.status(500).json({
+    if (!isValidAddress(pickup) || !isValidAddress(dropoff)) {
+      return res.status(400).json({
         success: false,
-        error: "Une erreur est survenue lors du calcul du devis.",
+        error: "Les adresses fournies ne sont pas valides.",
       });
     }
-  });
-});
+
+    // Vérifier le cache
+    const cacheKey = generateCacheKey(pickup, dropoff);
+    const cachedQuote = quoteCache.get(cacheKey);
+
+    if (cachedQuote && Date.now() - cachedQuote.timestamp < CACHE_DURATION) {
+      console.log(`✅ Cache hit pour devis`);
+      return res.status(200).json({
+        success: true,
+        quote: cachedQuote.quote,
+        cached: true,
+      });
+    }
+
+    // Appel Google Maps API
+    const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+
+    if (!apiKey) {
+      console.error("❌ GOOGLE_MAPS_API_KEY non configurée");
+      return res.status(500).json({
+        success: false,
+        error: "Erreur de configuration serveur.",
+      });
+    }
+
+    const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(
+      pickup
+    )}&destinations=${encodeURIComponent(
+      dropoff
+    )}&mode=driving&units=metric&key=${apiKey}`;
+
+    const response = await axios.get(url, { timeout: 10000 });
+    const element = response.data?.rows?.[0]?.elements?.[0];
+
+    if (!element || element.status !== "OK") {
+      const errorMessages = {
+        NOT_FOUND: "Une des adresses n'a pas été trouvée.",
+        ZERO_RESULTS: "Aucun itinéraire trouvé entre ces deux adresses.",
+        MAX_ROUTE_LENGTH_EXCEEDED: "La distance est trop grande.",
+      };
+
+      return res.status(400).json({
+        success: false,
+        error:
+          errorMessages[element?.status] ||
+          "Impossible de calculer l'itinéraire.",
+      });
+    }
+
+    // Calcul du prix
+    const distanceKm = element.distance.value / 1000;
+    const durationMinutes = Math.ceil(element.duration.value / 60);
+    const basePrice = distanceKm * 2;
+    const finalPrice = Math.max(20, basePrice);
+
+    const quote = {
+      pickup,
+      dropoff,
+      stops,
+      distance: parseFloat(distanceKm.toFixed(2)),
+      kilometers: distanceKm.toFixed(2),
+      duree: `${durationMinutes} min`,
+      durationMinutes,
+      prix: parseFloat(finalPrice.toFixed(2)),
+      price: finalPrice.toFixed(2),
+      createdAt: new Date().toISOString(),
+    };
+
+    // Sauvegarder en cache
+    quoteCache.set(cacheKey, {
+      quote,
+      timestamp: Date.now(),
+    });
+
+    console.log(
+      `✅ Devis créé: ${distanceKm.toFixed(2)}km = ${finalPrice.toFixed(2)}€`
+    );
+
+    return res.status(200).json({
+      success: true,
+      quote,
+      cached: false,
+    });
+  } catch (error) {
+    console.error("❌ Erreur createQuote:", error.message);
+
+    if (error.code === "ECONNABORTED") {
+      return res.status(504).json({
+        success: false,
+        error:
+          "Le service est temporairement indisponible. Veuillez réessayer.",
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      error: "Une erreur est survenue lors du calcul du devis.",
+    });
+  }
+};
